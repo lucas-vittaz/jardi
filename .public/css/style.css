@@ -242,19 +242,6 @@ header {
   }
 }
 /* ---Nos realisations--- */
-#carouselExampleIndicators {
-  width: 1000px;
-  height: auto;
-}
-
-#realisations_img {
-  background-image: url("realisations_img.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
-}
-
 #realisations {
   background: white;
   background: linear-gradient(0deg, white 0%, #698020 100%);
