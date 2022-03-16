@@ -1,6 +1,7 @@
 /* ---General parameters--- */
 body {
   overflow-x: hidden;
+  background-color: red;
 }
 
 h1 {
