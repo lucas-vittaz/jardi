@@ -63,7 +63,7 @@
     <link rel="stylesheet" href=".public\css\style.css" />
   </head>
   <!-- ---Navbar--- -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a id="nav-logo" class="navbar-brand mx-5" href="/"></a>
           <button
@@ -123,11 +123,11 @@
       </header>
   <!-- ---A propos--- -->
   <section id="propos">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-lg-8 col-xl-8 col-md-6 col-sm-12">
-          <h2 class="my-5 mx-5">A propos</h2>
-          <p class="my-3 mx-5">
+          <h2 class="">A propos</h2>
+          <p class="">
             Jeune entreprise chapelaine spécialisée dans l’entretien d’espaces
             verts et la création de pelouses.<br><br> Particulièrement attaché à la
             satisfaction client, nous mettons tout en œuvre pour réaliser vos
@@ -149,11 +149,12 @@
           <h2>Nos prestations</h2>
         </div>
       </div>
-      <div class="row my-5">
-        <div class="col-sm-6 mb-5">
+      <div class="row">
+        <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Entretien d'espaces verts</h5>
+              <h5 class="card-title text-center">Entretien d'espaces verts</h5>
+              <div class="card-line m-auto"></div>
               <p class="card-text">
                 Que vous soyez une entreprise, un particulier, nous vous
                 proposons un eventail de prestations d'entretien de vos
@@ -178,7 +179,8 @@
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Création Paysagère</h5>
+              <h5 class="card-title text-center">Création Paysagère</h5>
+              <div class="card-line m-auto"></div>
               <p class="card-text">
                 Vous avez besoin d'aménager votre jardin ?
               </p>
@@ -246,7 +248,7 @@
   </section>
   <!-- ---Nos avis--- -->
   <section id="rating">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row px-5">
         <div class="col-lg-8 col-xl-8 col-md-6 col-sm-12">
           <h2>Avis clients</h2>
@@ -335,30 +337,108 @@
       <div class="row">
         <div class="col">
           <div class="form-bg">
-            <form action="" method="get" class="form text-center">
-              <div class="form-example">
-                  <select name="type" id="type">
-                    <option value="Particulier">Particulier</option>
-                    <option value="Entreprise">Entreprise</option>
-                    <option value="Association">Association</option>
-                    <option value="Autres">Autres</option>
+            <form class="needs-validation" novalidate>
+              <div class="form-row">
+              <div class="col-md-4">
+                  <select class="form-select" aria-label="Default select example" required>
+                    <option value="" selected>Type de demande</option>
+                    <option value="1">Devis</option>
+                    <option value="2">Renseignements</option>
+                    <option value="3">Recrutement</option>
+                    <option value="4">Autre</option>
                   </select>
-                <input type="text" name="place" id="place" placeholder="lieu d'intervention" required>
+                </div>
+                <div class="col-md-4">
+                  <%# <label for="validationCustom01">First name</label> %>
+                  <input type="name" class="form-control" id="validationCustom01" placeholder="Nom" value="" required>
+                  <div class="invalid-feedback">
+                    <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre nom.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <%# <label for="validationCustom02">Last name</label> %>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Prénom" value="" required>
+                  <div class="invalid-feedback">
+                    <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre prénom.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <%# <label for="validationCustomUsername">Username</label> %>
+                  <div class="input-group">
+                    <%# <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div> %>
+                    <input type="email" class="form-control" id="validationCustomUsername" placeholder="e-mail" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      <i class="fa-solid fa-at" style="color:red";></i> Veuillez entrer votre adresse mail.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <%# <label for="validationCustom02"></label> %>
+                  <input type="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Téléphone" value="" required>
+                    <div class="invalid-feedback">
+                      <i class="fa-solid fa-location-pin" style="color:red";></i> Veuillez entrer votre numéro de téléphone.
+                    </div>
               </div>
-              <div class="form-user">
-                <input type="text" name="name" id="name" placeholder="Nom" required>
-                <input type="text" name="first-name" id="first-name" placeholder="Prénom" required>
+              <div class="form-row">
+                <div class="col-md-4">
+                  <%# <label for="validationCustom03">City</label> %>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="Localisation" required>
+                    <div class="invalid-feedback">
+                      <i class="fa-solid fa-phone" style="color:red";></i> Veuillez entrer le lieu d'intervention.
+                    </div>
+                </div>
+                <%# <div class="col-md-3">
+                  <label for="validationCustom04">State</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div> %>
+                <%# <div class="col-md-3">
+                  <label for="validationCustom05">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div> %>
               </div>
-              <div class="form-contact">
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
-                <input type="tel" name="tel" id="tel" placeholder="Téléphone" required>
-              </div>
-              
-                <textarea id="story" name="story" rows="5" cols="33"></textarea>
-              <div class="form-example">
-                <input type="submit" value="Envoyer!">
-              </div>
+            
+              <%# <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div> %>
+              <button class="btn btn-primary" type="submit">Submit form</button>
             </form>
+            
+            <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
           </div>
         </div>
       </div>
@@ -371,73 +451,73 @@
   <!-- ---Footer--- -->
   <footer>
     <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
-      <div class="col mx-5 footer-logo"></div>
-      <div class="col mx-5">
+      <div class="col footer-logo"></div>
+      <div class="col">
         <h5>Plan du site</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#Accueil" class="nav-link p-0 text-muted">Accueil</a>
+          <li class="nav-item">
+            <a href="#Accueil" class="nav-link text-muted">Accueil</a>
           </li>
-          <li class="nav-item mb-2">
-            <a href="#propos" class="nav-link p-0 text-muted">A propos</a>
+          <li class="nav-item">
+            <a href="#propos" class="nav-link text-muted">A propos</a>
           </li>
-          <li class="nav-item mb-2">
-            <a href="#prestations" class="nav-link p-0 text-muted"
+          <li class="nav-item">
+            <a href="#prestations" class="nav-link text-muted"
               >Nos prestations</a
             >
           </li>
-          <li class="nav-item mb-2">
-            <a href="#réalisations" class="nav-link p-0 text-muted"
+          <li class="nav-item">
+            <a href="#réalisations" class="nav-link text-muted"
               >Réalisations</a
             >
           </li>
-          <li class="nav-item mb-2">
-            <a href="#avis" class="nav-link p-0 text-muted">Avis clients</a>
+          <li class="nav-item">
+            <a href="#avis" class="nav-link text-muted">Avis clients</a>
           </li>
-          <li class="nav-item mb-2">
-            <a href="#contact" class="nav-link p-0 text-muted"
+          <li class="nav-item">
+            <a href="#contact" class="nav-link text-muted"
               >Nous contacter</a
             >
           </li>
         </ul>
       </div>
-      <div class="col mx-5">
+      <div class="col">
         <h5>Contact</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">
+          <li class="nav-item">
             
             <p><i class="fa-solid fa-location-dot"></i> 44240 La Chapelle-sur-Erdre</p>
           </li>
-          <li class="nav-item mb-2">
+          <li class="nav-item">
             
             <p><i class="fa-solid fa-phone"></i> 06 42 00 66 77</p>
           </li>
-          <li class="nav-item mb-2">
+          <li class="nav-item">
             <p><i class="fa-solid fa-envelope"> </i> <a href="mailto:contact@jardica.net">contact@jardica.net</a></p>
           </li>
         </ul>
       </div>
-      <div class="col mx-5">
+      <div class="col">
         <h5>Restez connecté !</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <p><a href="#" class="nav-link p-0 text-muted"
+          <li class="nav-item">
+            <p><a href="#" class="nav-link text-muted"
               ><i class="fa-brands fa-facebook-square"></i
             > Facebook</a></p>
           </li>
-          <li class="nav-item mb-2">
-            <p><a href="#" class="nav-link p-0 text-muted">
+          <li class="nav-item">
+            <p><a href="#" class="nav-link text-muted">
               <i class="fa-brands fa-instagram-square"></i>
             Instagram</a></p>
           </li>
-          <li class="nav-item mb-2">
-            <p><a href="#" class="nav-link p-0 text-muted">
+          <li class="nav-item">
+            <p><a href="#" class="nav-link text-muted">
               <i class="fa-brands fa-instagram-square"></i>
              Google Buisness</a></p>
           </li>
         </ul>
       </div>
-    <div class="justify-content-between py-4 my-4 border-top">
+    <div class="justify-content-between border-top">
       <p class="text-center">© 2022 Jardi CA, tous droits réservés.</p>
     </div>
   </footer>
