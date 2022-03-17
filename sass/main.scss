@@ -149,13 +149,19 @@ header {
   border-left: 5px solid #3a4712;
   /* border-right: 5px solid #3a4712; */
 }
-.card ul li {
-  list-style: url("/img/others/liste_style.svg");
+.card-line {
+  width: 50%;
+  height: 2px;
+  background-color: #3a4712;
 }
+.card ul li {
+  list-style: url("leaf-svgrepo-com\ \(1\).svg");
+}
+
 .prestations_img {
   position: absolute;
 
-  background-image: url("/img/others/tax_credit.png");
+  background-image: url("1.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 250px;
@@ -238,11 +244,9 @@ header {
     right: 10%;
   }
 }
+
 /* ---Nos realisations--- */
-#carouselExampleIndicators {
-  width: 1000px;
-  height: auto;
-}
+
 #realisations_img {
   background-image: url("realisations_img.jpg");
   background-size: contain;
