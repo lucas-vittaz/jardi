@@ -44,6 +44,9 @@
 //         $failed = "Désolé, votre message n'a pas pu être envoyé, essayez plus tard !"
 //     }
 // }
+
+//gestion de formulaire tuto grafikart https://www.youtube.com/watch?v=Dw9R0NEXuYo avec gestion des erreurs + affichage sur l'index si le mail est bien parti
+
 var_dump($POST);
 $errors = [];
 
@@ -80,8 +83,8 @@ if(!empty($errors)){
 }else{
     $_SESSION['success'] = 1;
     $message = $_POST['subject'];
-    $headers = 'FROM: $_POST['mail']'; // attention pas sur de ça
-    mail("tvn.terence@gmail.com", "mail pro", "Mail pro", $message, $header);
+    $headers = 'FROM: $_POST['mail']'; // attention pas sur de ça (erreur au niveau des brackets) normalement on recupere la variable mail mais ça n'a pas l'air de fonctionner 
+    mail("tvn.terence@gmail.com", "mail pro", "Mail pro", $message, $header); // methode mail a revoir ($message + $header) faut il rajouter chaque header 1 par 1???
     header('Location: index.php');
 }
 
