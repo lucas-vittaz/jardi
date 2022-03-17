@@ -555,9 +555,9 @@
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsZ2Fyb3MiLCJhIjoiY2t4OW5udDg3MTE3aTJ1bW42ZmthbWd4NSJ9.zv3nSQDhyH5aLFsMnw2jww';
 const map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/light-v10', // style URL
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
     center: [-1.551807, 47.298485], // starting position [lng, lat]
-    zoom: 10.5 // starting zoom
+    zoom: 9.5 // starting zoom
   });
   
   map.on('load', () => {
@@ -662,7 +662,7 @@ map.addLayer({
   'layout': {},
   'paint': {
     'fill-color': '#698020', // blue color fill
-    'fill-opacity': 0.5
+    'fill-opacity': 0.2
   }
 });
 // Add a black outline around the polygon.
