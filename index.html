@@ -1,3 +1,6 @@
+<!-- <?php
+  session_start();
+?> -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -363,7 +366,21 @@
       </div>
       <div class="row">
         <div class="col">
-          <form class="needs-validation" novalidate>
+
+          <!-- <?php
+            if(array_key_exists('errors', $_SESSION)): ?> 
+              <div class="alert alert-danger">
+                <?= implode('li', $_SESSION['errors']); ?>
+              </div>
+          <?php endif;?>
+          <?php
+            if(array_key_exists('success', $_SESSION)): ?> 
+              <div class="alert alert-success">
+                Votre e-mail a bien été envoyé !
+              </div>
+          <?php endif;?> -->
+
+          <form action="contact.php" method="POST" class="needs-validation" novalidate>
             <div class="form-row">
             <div class="col">
                 <select class="form-select" name="type" aria-label="Default select example" required>
@@ -375,27 +392,27 @@
                 </select>
               </div>
               <div class="col-md-4 mb-3">
-                <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Nom" value="" required>
+                <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Nom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : '';?>" required>
                 <div class="invalid-feedback">
                   <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre nom.
                 </div>
               </div>
               <div class="col-md-4 mb-3">
-                <input type="text" name="f_name" class="form-control" id="validationCustom02" placeholder="Prénom" value="" required>
+                <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="Prénom" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : '';?>" required>
                 <div class="invalid-feedback">
                   <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre prénom.
                 </div>
               </div>
               <div class="col-md-4 mb-3">
                 <div class="input-group">
-                  <input type="email" name="mail" class="form-control" id="validationCustomUsername" placeholder="e-mail" aria-describedby="inputGroupPrepend" required>
+                  <input type="email" name="mail" class="form-control" id="validationCustomUsername" placeholder="e-mail" aria-describedby="inputGroupPrepend"  value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : '';?>" required>
                   <div class="invalid-feedback">
                     <i class="fa-solid fa-at" style="color:red";></i> Veuillez entrer votre adresse mail.
                   </div>
                 </div>
               </div>
               <div class="col-md-4 mb-3">
-                <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Téléphone" value="" required>
+                <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Téléphone" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : '';?>" required>
                   <div class="invalid-feedback">
                     <i class="fa-solid fa-location-pin" style="color:red";></i> Veuillez entrer votre numéro de téléphone.
                   </div>
@@ -403,17 +420,17 @@
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 
-                <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Localisation" required>
+                <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Localisation" value="<?= isset($_SESSION['inputs']['location']) ? $_SESSION['inputs']['location'] : '';?>" required>
                   <div class="invalid-feedback">
                     <i class="fa-solid fa-phone" style="color:red";></i> Veuillez entrer le lieu d'intervention.
                   </div>
               </div>
   
               <div class="col-md-4  mb-3">
-                <input type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ...">
+                <input type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." value="<?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?>" required>
               </div>
             </div>
-            <button class="btn btn-primary" name="submit" type="submit">Submit form</button>
+            <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>
           </form>
         </div>
       </div>
@@ -661,3 +678,11 @@ map.addLayer({
 
 </body>
 </html>
+
+<!-- <?php
+
+unset($_SESSION['inputs']);
+unset($_SESSION['success']);
+unset($_SESSION['errors'];
+
+?> -->
