@@ -273,8 +273,7 @@ header {
 }
 
 #realisations {
-  background: white;
-  background: linear-gradient(0deg, white 0%, #698020 100%);
+  background-image: linear-gradient(to bottom, #698020 100% #ffffff white);
 }
 
 #realisations a {
@@ -339,7 +338,7 @@ form textarea {
 
 /* ---footer--- */
 footer {
-  background-color: #d2d9bc;
+  background-image: linear-gradient(to top, #ffffff white, #698020 100%);
   clip-path: circle(96.8% at 50% 100%);
 }
 

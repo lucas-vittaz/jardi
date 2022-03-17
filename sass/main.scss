@@ -267,11 +267,9 @@ header {
   width: auto;
 }
 #realisations {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(105, 128, 32, 1) 100%
+  background-image: linear-gradient(
+    to bottom,
+    rgba(105, 128, 32, 1) 100% #ffffff rgba(255, 255, 255, 1)
   );
 }
 #realisations {
@@ -338,7 +336,11 @@ form {
 
 /* ---footer--- */
 footer {
-  background-color: #d2d9bc;
+  background-image: linear-gradient(
+    to top,
+    #ffffff rgba(255, 255, 255, 1),
+    rgba(105, 128, 32, 1) 100%
+  );
   clip-path: circle(96.8% at 50% 100%);
 }
 
