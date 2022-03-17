@@ -342,7 +342,7 @@
         <form class="needs-validation" novalidate>
           <div class="form-row">
           <div class="col-md-4 mb-3">
-              <select class="form-select" aria-label="Default select example" required>
+              <select class="form-select" name="type" aria-label="Default select example" required>
                 <option value="" selected>Type de demande</option>
                 <option value="1">Devis</option>
                 <option value="2">Renseignements</option>
@@ -351,27 +351,27 @@
               </select>
             </div>
             <div class="col-md-4 mb-3">
-              <input type="name" class="form-control" id="validationCustom01" placeholder="Nom" value="" required>
+              <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Nom" value="" required>
               <div class="invalid-feedback">
                 <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre nom.
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" id="validationCustom02" placeholder="Prénom" value="" required>
+              <input type="text" name="f_name" class="form-control" id="validationCustom02" placeholder="Prénom" value="" required>
               <div class="invalid-feedback">
                 <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre prénom.
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="input-group">
-                <input type="email" class="form-control" id="validationCustomUsername" placeholder="e-mail" aria-describedby="inputGroupPrepend" required>
+                <input type="email" name="mail" class="form-control" id="validationCustomUsername" placeholder="e-mail" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
                   <i class="fa-solid fa-at" style="color:red";></i> Veuillez entrer votre adresse mail.
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <input type="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Téléphone" value="" required>
+              <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Téléphone" value="" required>
                 <div class="invalid-feedback">
                   <i class="fa-solid fa-location-pin" style="color:red";></i> Veuillez entrer votre numéro de téléphone.
                 </div>
@@ -379,44 +379,25 @@
           <div class="form-row">
             <div class="col-md-4 mb-3">
               
-              <input type="text" class="form-control" id="validationCustom03" placeholder="Localisation" required>
+              <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Localisation" required>
                 <div class="invalid-feedback">
                   <i class="fa-solid fa-phone" style="color:red";></i> Veuillez entrer le lieu d'intervention.
                 </div>
             </div>
+
+            <div class="col-md-4  mb-3">
+              <input type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ...">
+            </div>
           </div>
-          <button class="btn btn-primary" type="submit">Submit form</button>
+          <button class="btn btn-primary" name="submit" type="submit">Submit form</button>
         </form>
       </div>
     </div>
   </section>
 
-
-
-
-
   <!-- Map -->
 
-  <div id='map' style='width: 500px; height: 400px;'></div>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <div id='map' style='width: 500px; height: 350px;'></div>
 
   <!-- ---Footer--- -->
   <footer>
@@ -522,14 +503,134 @@
     </script>
     
 <!-- Map Script -->
+
 <script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsZ2Fyb3MiLCJhIjoiY2t4OW5udDg3MTE3aTJ1bW42ZmthbWd4NSJ9.zv3nSQDhyH5aLFsMnw2jww';
-  const map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: 'mapbox://styles/mapbox/streets-v11', // style URL
-      center: [-1.551807, 47.298485], // starting position [lng, lat]
-      zoom: 11 // starting zoom
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsZ2Fyb3MiLCJhIjoiY2t4OW5udDg3MTE3aTJ1bW42ZmthbWd4NSJ9.zv3nSQDhyH5aLFsMnw2jww';
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/light-v10', // style URL
+    center: [-1.551807, 47.298485], // starting position [lng, lat]
+    zoom: 10.5 // starting zoom
   });
+  
+  map.on('load', () => {
+  // Add a data source containing GeoJSON data.
+  map.addSource('maine', {
+  'type': 'geojson',
+  'data': {
+    'type': 'Feature',
+    'geometry': {
+      'type': 'Polygon',
+      // These coordinates outline Maine.
+      'coordinates': [
+        [
+          [-1.597711, 47.333608],
+          [-1.592475, 47.328954],
+          [-1.593334, 47.327151],
+          [-1.588956, 47.324009],
+          [-1.585748, 47.317961],
+          [-1.586361, 47.314570],
+          [-1.587790, 47.314155],
+          [-1.584626, 47.312978],
+          [-1.584728, 47.312425],
+          [-1.584626, 47.312494],
+          [-1.584013, 47.312148],
+          [-1.584217, 47.311733],
+          [-1.582176, 47.311387],
+          [-1.581359, 47.311456],
+          [-1.580951, 47.309726],
+          [-1.581359, 47.309034],
+          [-1.580645, 47.308203],
+          [-1.579114, 47.308065],
+          [-1.578297, 47.307165],
+          [-1.579624, 47.303912],
+          [-1.585646, 47.298374],
+          [-1.585136, 47.295744],
+          [-1.584115, 47.294913],
+          [-1.585340, 47.293183],
+          [-1.585136, 47.292352],
+          [-1.586846, 47.284004],
+          [-1.585867, 47.278164],
+          [-1.583960, 47.272987],
+          [-1.568132, 47.271612],
+          [-1.564624, 47.269668],
+          [-1.563079, 47.269610],
+          [-1.562736, 47.269843],
+          [-1.562307, 47.269901],
+          [-1.559475, 47.270134],
+          [-1.558574, 47.269305],
+          [-1.558917, 47.265694],
+          [-1.555141, 47.264179],
+          [-1.555141, 47.261383],
+          [-1.553253, 47.258471],
+          [-1.550849, 47.257539],
+          [-1.551021, 47.256840],
+          [-1.548789, 47.256257],
+          [-1.544498, 47.256141],
+          [-1.540132, 47.255145],
+          [-1.535669, 47.259106],
+          [-1.538072, 47.265630],
+          [-1.527429, 47.277511],
+          [-1.526770, 47.283836],
+          [-1.532950, 47.291521],
+          [-1.532264, 47.295014],
+          [-1.532435, 47.297342],
+          [-1.529002, 47.303046],
+          [-1.531062, 47.305374],
+          [-1.531062, 47.308866],
+          [-1.534323, 47.312940],
+          [-1.537585, 47.314919],
+          [-1.542392, 47.315850],
+          [-1.543078, 47.318061],
+          [-1.540503, 47.319108],
+          [-1.542907, 47.327486],
+          [-1.546168, 47.329231],
+          [-1.547556, 47.333834],
+          [-1.552543, 47.335221],
+          [-1.553986, 47.338058],
+          [-1.557595, 47.338645],
+          [-1.558461, 47.340210],
+          [-1.560482, 47.340895],
+          [-1.560915, 47.342166],
+          [-1.563802, 47.344709],
+          [-1.563658, 47.347252],
+          [-1.565534, 47.347937],
+          [-1.566833, 47.351164],
+          [-1.571886, 47.352436],
+          [-1.572174, 47.352827],
+          [-1.574195, 47.353316],
+          [-1.574917, 47.349991],
+          [-1.597711, 47.333608]
+        ]
+      ]
+    }
+  }
+});
+ 
+// Add a new layer to visualize the polygon.
+map.addLayer({
+  'id': 'lcse',
+  'type': 'fill',
+  'source': 'maine', // reference the data source
+  'layout': {},
+  'paint': {
+    'fill-color': '#698020', // blue color fill
+    'fill-opacity': 0.5
+  }
+});
+// Add a black outline around the polygon.
+map.addLayer({
+  'id': 'outline',
+  'type': 'line',
+  'source': 'maine',
+  'layout': {},
+  'paint': {
+    'line-color': '#000',
+    'line-width': 3
+    }
+  });
+});
+
   </script>
 </body>
 </html>
