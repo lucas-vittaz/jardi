@@ -1,17 +1,29 @@
 /* ---General parameters--- */
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 body {
   overflow-x: hidden;
 }
 
 h1 {
+  font-family: "Italiana", serif;
   color: white;
   font-size: 60px;
 }
 
 h2 {
+  font-family: "Italiana", serif;
   color: #698020;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+}
+
+li {
+  font-family: "DM Sans", sans-serif;
 }
 
 /* ---navBar--- */

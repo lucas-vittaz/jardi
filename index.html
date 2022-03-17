@@ -362,6 +362,8 @@
     <div class="container">
       <div class="row">
           <h2>Contactez-nous</h2>
+          <p class="text-justify">Vous etes un particulier, une entreprise ou une co-propriété ?<br>
+            Pour toute demandes, laissez nous un message,  et nous y répondrons avec plaisir dans les plus brefs délais.</p>
           <div class="shape_section mb-5"></div>
       </div>
       <div class="row">
@@ -379,64 +381,66 @@
                 Votre e-mail a bien été envoyé !
               </div>
           <?php endif;?> -->
-
-          <form action="contact.php" method="POST" class="needs-validation" novalidate>
-            <div class="form-row">
-            <div class="col">
-                <select class="form-select" name="type" aria-label="Default select example" required>
-                  <option value="" selected>Type de demande</option>
-                  <option value="1">Devis</option>
-                  <option value="2">Renseignements</option>
-                  <option value="3">Recrutement</option>
-                  <option value="4">Autre</option>
-                </select>
-              </div>
-              <div class="col-md-4 mb-3">
-                <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Nom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : '';?>" required>
-                <div class="invalid-feedback">
-                  <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre nom.
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="Prénom" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : '';?>" required>
-                <div class="invalid-feedback">
-                  <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre prénom.
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <div class="input-group">
-                  <input type="email" name="mail" class="form-control" id="validationCustomUsername" placeholder="e-mail" aria-describedby="inputGroupPrepend"  value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : '';?>" required>
-                  <div class="invalid-feedback">
-                    <i class="fa-solid fa-at" style="color:red";></i> Veuillez entrer votre adresse mail.
+              <div class="form-bg">
+                <form action="contact.php" method="POST" class="needs-validation" novalidate>
+                  <div class="form-row">
+                  <div class="col">
+                      <select class="form-select" name="type" aria-label="Default select example" required>
+                        <option value="" selected>Type de demande</option>
+                        <option value="1">Devis</option>
+                        <option value="2">Renseignements</option>
+                        <option value="3">Recrutement</option>
+                        <option value="4">Autre</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Nom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : '';?>" required>
+                      <div class="invalid-feedback">
+                        <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre nom.
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="Prénom" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : '';?>" required>
+                      <div class="invalid-feedback">
+                        <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre prénom.
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="input-group">
+                        <input type="email" name="mail" class="form-control" id="validationCustomUsername" placeholder="e-mail" aria-describedby="inputGroupPrepend"  value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : '';?>" required>
+                        <div class="invalid-feedback">
+                          <i class="fa-solid fa-at" style="color:red";></i> Veuillez entrer votre adresse mail.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Téléphone" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : '';?>" required>
+                        <div class="invalid-feedback">
+                          <i class="fa-solid fa-location-pin" style="color:red";></i> Veuillez entrer votre numéro de téléphone.
+                        </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Téléphone" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : '';?>" required>
-                  <div class="invalid-feedback">
-                    <i class="fa-solid fa-location-pin" style="color:red";></i> Veuillez entrer votre numéro de téléphone.
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      
+                      <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Localisation" value="<?= isset($_SESSION['inputs']['location']) ? $_SESSION['inputs']['location'] : '';?>" required>
+                        <div class="invalid-feedback">
+                          <i class="fa-solid fa-phone" style="color:red";></i> Veuillez entrer le lieu d'intervention.
+                        </div>
+                    </div>
+        
+                    <div class="col-md-4  mb-3">
+                      <input type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." value="<?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?>" required>
+                    </div>
                   </div>
-            </div>
-            <div class="form-row">
-              <div class="col-md-4 mb-3">
-                
-                <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Localisation" value="<?= isset($_SESSION['inputs']['location']) ? $_SESSION['inputs']['location'] : '';?>" required>
-                  <div class="invalid-feedback">
-                    <i class="fa-solid fa-phone" style="color:red";></i> Veuillez entrer le lieu d'intervention.
-                  </div>
+                  <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>
+                </form>
               </div>
-  
-              <div class="col-md-4  mb-3">
-                <input type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." value="<?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?>" required>
-              </div>
-            </div>
-            <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>
-          </form>
+          
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <div id='map' style='width: 500px; height: 350px;'></div>
+            <div id='map' style='width: 500px; height: 350px;'></div>
         </div>
       </div>
     </div>
