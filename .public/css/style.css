@@ -55,12 +55,14 @@ nav {
 }
 
 .nav-link:hover {
+  transition: color 300ms linear;
   color: #3a4712 !important;
 }
 
 .btn {
   background-color: #698020 !important;
   font-weight: bold;
+  border: none;
 }
 .btn a {
   color: white;
@@ -68,6 +70,7 @@ nav {
 }
 
 .btn:hover {
+  transition: background-color 300ms linear;
   background-color: #3a4712 !important;
   border-color: #698020;
   border: none;
@@ -82,25 +85,35 @@ nav {
 
 /* ---Header--- */
 header {
-  height: 92vh;
+  position: relative;
+  height: 100vh;
   min-height: 500px;
   background-image: url("/img/others/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
 }
 
-#masthead-title {
-  position: absolute;
-  bottom: 200px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 5px white solid;
+.btn-enter {
+  background: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 1em 2.5em;
+  font-size: 12px;
+  line-height: 24px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none !important;
+  color: #ffffff;
 }
 
-#masthead-contact {
-  position: absolute;
-  bottom: 125px;
+.btn-enter:hover {
+  transition: background-color 300ms linear;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  text-decoration: none !important;
 }
 
 #masthead-title P {
@@ -171,12 +184,12 @@ header {
 }
 
 .card ul li {
-  list-style: url("leaf-svgrepo-com (1).svg");
+  list-style: url("/img/others/liste_style.svg");
 }
 
 .prestations_img {
   position: absolute;
-  background-image: url("1.png");
+  background-image: url("/img/others/tax_credit.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 250px;
