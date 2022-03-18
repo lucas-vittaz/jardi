@@ -4,28 +4,63 @@
 
 // font-family: "Italiana", serif;
 // font-family: 'DM Sans', sans-serif;
+
+
+// VARIABLES
+// Main colors
+$my-primary: #3a4712;
+$my-secondary: #698020;
+
+// Section colors
+$bg-about: #f1f1f1;
+$bg-prestations: #d4dabe;
+
+// Partials colors
+$bg-cards: $my-secondary;
+$border-profile: white;
+// $border-profile: #495916;
+// $bg-cards: #f3f2f2;
+$shadow-cards: #c0c0c0;
+$bg-form: #d1d8bc;
+
+
 body {
   overflow-x: hidden;
 }
 
 h1 {
   font-family: "Italiana", serif;
-  color: white;
+  color: whitesmoke;
   font-size: 60px;
 }
 
 h2 {
   font-family: "Italiana", serif;
-  color: #698020;
+  color: $my-secondary;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
+h3 {
+  font-family: "Italiana", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h4{
+  font-family: "Italiana", serif;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 p {
   font-family: "DM Sans", sans-serif;
 }
 li {
   font-family: "DM Sans", sans-serif;
 }
+
 /* ---navBar--- */
 
 nav {
@@ -53,16 +88,16 @@ nav {
 }
 
 .nav-link {
-  color: #698020 !important;
+  color: $my-secondary !important;
   font-weight: bold;
 }
 .nav-link:hover {
   transition: color 300ms linear;
-  color: #3a4712 !important;
+  color: $my-primary !important;
 }
 
 .btn {
-  background-color: #698020 !important;
+  background-color: $my-secondary !important;
   font-weight: bold;
   border: none;
   a {
@@ -73,8 +108,8 @@ nav {
 
 .btn:hover {
   transition: background-color 300ms linear;
-  background-color: #3a4712 !important;
-  border-color: #698020;
+  background-color: $my-primary !important;
+  border-color: $my-secondary;
   border: none;
 }
 
@@ -99,7 +134,7 @@ header {
 
 .btn-enter {
   background: transparent;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
   border: 1px solid rgb(255, 255, 255);
   padding: 1em 2.5em;
@@ -109,32 +144,22 @@ header {
   text-align: center;
   display: inline-block;
   text-decoration: none !important;
-  color: #ffffff;
 }
 .btn-enter:hover {
   transition: background-color 300ms linear;
   background: rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  color: white;
   text-decoration: none !important;
 }
-#masthead-title {
-}
 
-#masthead-contact {
-}
-
-#masthead-title P {
-  color: white;
-}
-
-#masthead-contact p {
-  color: white;
-  text-decoration: none;
-}
-
-#masthead-contact a {
-  color: white;
-  text-decoration: none;
+.masthead {
+  color: whitesmoke;
+  &-contact{
+      text-decoration: none;
+  }
+  a {
+    color: whitesmoke;
+  }
 }
 
 .fa-envelope {
@@ -148,7 +173,7 @@ header {
 
 /* ---A propos--- */
 #propos {
-  background-color: #f1f1f1;
+  background-color: $bg-about;
 }
 #img img {
   background-image: url("/img/jardi_ca.jpg");
@@ -162,7 +187,7 @@ header {
   user-select: none;
 }
 #propos a {
-  color: #698020;
+  color: $my-secondary;
   font-weight: bold;
   text-decoration: none;
 }
@@ -170,20 +195,20 @@ header {
 /* ---Nos prestations--- */
 
 #prestations {
-  background-color: #d4dabe;
+  background-color: $bg-prestations;
   position: relative;
   height: auto;
 }
 .card {
   position: relative;
-  background-color: #eaeaea;
-  border-left: 5px solid #3a4712;
-  /* border-right: 5px solid #3a4712; */
+  background-color: $bg-cards;
+  border-left: 5px solid $my-primary;
+  /* border-right: 5px solid $my-primary; */
 }
 .card-line {
   width: 50%;
   height: 2px;
-  background-color: #3a4712;
+  background-color: $my-primary;
 }
 .card ul li {
   list-style: url("/img/others/liste_style.svg");
@@ -288,12 +313,12 @@ header {
 #realisations {
   background-image: linear-gradient(
     to bottom,
-    rgba(105, 128, 32, 1) 100% #ffffff rgba(255, 255, 255, 1)
+    rgba(105, 128, 32, 1) 100% white rgba(255, 255, 255, 1)
   );
 }
 #realisations {
   a {
-    color: #698020;
+    color: $my-secondary;
     font-weight: bold;
     text-decoration: none;
   }
@@ -305,11 +330,12 @@ header {
   height: 200px;
   width: 400px;
   margin: 0 1.5rem;
-  background-color: #eaeaea;
+  background-color: $bg-cards;
   border-radius: 5px;
-  box-shadow: 1px 3px 5px #c0c0c0;
+  box-shadow: 1px 3px 5px $shadow-cards;
   p {
     font-size: 0.8rem;
+    color: white;
   }
 }
 
@@ -321,7 +347,7 @@ header {
   left: 10%;
   background-size: cover;
   border-radius: 50%;
-  border: solid 5px #495916;
+  border: solid 5px $border-profile;
   &-1 {
     background-image: url("https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?q=75&fm=jpg&w=400&fit=max");
   }
@@ -335,7 +361,7 @@ header {
 
 /* ---Nous contacter--- */
 .form-bg {
-  background-color: #d1d8bc;
+  background-color: $bg-form;
   width: AUTO;
 }
 form {
@@ -357,7 +383,7 @@ form {
 footer {
   background-image: linear-gradient(
     to top,
-    #ffffff rgba(255, 255, 255, 1),
+    white rgba(255, 255, 255, 1),
     rgba(105, 128, 32, 1) 100%
   );
   clip-path: circle(96.8% at 50% 100%);
@@ -373,8 +399,8 @@ footer {
 }
 footer a {
   text-decoration: underline;
-  color: #698020;
+  color: $my-secondary;
 }
 footer i {
-  color: #698020;
+  color: $my-secondary;
 }

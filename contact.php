@@ -83,7 +83,7 @@ if(!empty($errors)){
 }else{
     $_SESSION['success'] = 1;
     $message = $_POST['subject'];
-    $headers = 'FROM: $_POST['mail']'; // attention pas sur de ça (erreur au niveau des brackets) normalement on recupere la variable mail mais ça n'a pas l'air de fonctionner 
+    $headers = 'FROM: ' $_POST['mail']; // attention pas sur de ça (erreur au niveau des brackets) normalement on recupere la variable mail mais ça n'a pas l'air de fonctionner 
     mail("tvn.terence@gmail.com", "mail pro", "Mail pro", $message, $header); // methode mail a revoir ($message + $header) faut il rajouter chaque header 1 par 1???
     header('Location: index.php');
 }

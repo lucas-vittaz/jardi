@@ -7,7 +7,7 @@ body {
 
 h1 {
   font-family: "Italiana", serif;
-  color: white;
+  color: whitesmoke;
   font-size: 60px;
 }
 
@@ -16,6 +16,19 @@ h2 {
   color: #698020;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Italiana", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Italiana", serif;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 p {
@@ -96,7 +109,7 @@ header {
 
 .btn-enter {
   background: transparent;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
   border: 1px solid white;
   padding: 1em 2.5em;
@@ -106,28 +119,23 @@ header {
   text-align: center;
   display: inline-block;
   text-decoration: none !important;
-  color: #ffffff;
 }
 
 .btn-enter:hover {
   transition: background-color 300ms linear;
   background: rgba(0, 0, 0, 0.4);
-  color: #ffffff;
+  color: white;
   text-decoration: none !important;
 }
 
-#masthead-title P {
-  color: white;
+.masthead {
+  color: whitesmoke;
 }
-
-#masthead-contact p {
-  color: white;
+.masthead-contact {
   text-decoration: none;
 }
-
-#masthead-contact a {
-  color: white;
-  text-decoration: none;
+.masthead a {
+  color: whitesmoke;
 }
 
 .fa-envelope {
@@ -172,9 +180,9 @@ header {
 
 .card {
   position: relative;
-  background-color: #eaeaea;
+  background-color: #698020;
   border-left: 5px solid #3a4712;
-  /* border-right: 5px solid #3a4712; */
+  /* border-right: 5px solid $my-primary; */
 }
 
 .card-line {
@@ -286,7 +294,7 @@ header {
 }
 
 #realisations {
-  background-image: linear-gradient(to bottom, #698020 100% #ffffff white);
+  background-image: linear-gradient(to bottom, #698020 100% white white);
 }
 
 #realisations a {
@@ -301,12 +309,13 @@ header {
   height: 200px;
   width: 400px;
   margin: 0 1.5rem;
-  background-color: #eaeaea;
+  background-color: #698020;
   border-radius: 5px;
   box-shadow: 1px 3px 5px #c0c0c0;
 }
 .my-card p {
   font-size: 0.8rem;
+  color: white;
 }
 
 .profile {
@@ -317,7 +326,7 @@ header {
   left: 10%;
   background-size: cover;
   border-radius: 50%;
-  border: solid 5px #495916;
+  border: solid 5px white;
 }
 .profile-1 {
   background-image: url("https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?q=75&fm=jpg&w=400&fit=max");
@@ -351,7 +360,7 @@ form textarea {
 
 /* ---footer--- */
 footer {
-  background-image: linear-gradient(to top, #ffffff white, #698020 100%);
+  background-image: linear-gradient(to top, white white, #698020 100%);
   clip-path: circle(96.8% at 50% 100%);
 }
 
