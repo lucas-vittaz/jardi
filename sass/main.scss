@@ -38,7 +38,12 @@ h2 {
   font-family: "Italiana", serif;
   color: $my-secondary;
   font-weight: bold;
-  margin-bottom: 1rem;
+  padding: 1rem;
+}
+h3 {
+  font-family: "Italiana", serif;
+  color: #3a4712;
+  font-weight: bold;
 }
 
 h3 {
@@ -80,7 +85,7 @@ nav {
 }
 
 #nav-logo {
-  height: 7vh;
+  height: 8vh;
   padding-left: 150px;
   background-image: url("/img/logo/partial-logo.png");
   background-size: contain;
@@ -131,7 +136,18 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+#header-1 {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: auto;
+  top: 55%;
+  left: 5%;
+}
+#header-2 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
 .btn-enter {
   background: transparent;
   color: white;
@@ -147,7 +163,21 @@ header {
 }
 .btn-enter:hover {
   transition: background-color 300ms linear;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  text-decoration: none !important;
+}
+#masthead-title {
+}
+
+#masthead-contact {
+}
+
+#masthead-title P {
+  color: white;
+}
+
+#masthead-contact p {
   color: white;
   text-decoration: none !important;
 }
@@ -381,11 +411,7 @@ form {
 
 /* ---footer--- */
 footer {
-  background-image: linear-gradient(
-    to top,
-    white rgba(255, 255, 255, 1),
-    rgba(105, 128, 32, 1) 100%
-  );
+  background-color: #d1d8bc;
   clip-path: circle(96.8% at 50% 100%);
 }
 
@@ -401,6 +427,12 @@ footer a {
   text-decoration: underline;
   color: $my-secondary;
 }
-footer i {
-  color: $my-secondary;
+.fa-location-dot {
+  color: #698020;
+}
+#envelope-footer {
+  color: #698020;
+}
+#phone-footer {
+  color: #698020;
 }
