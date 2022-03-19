@@ -55,6 +55,9 @@ nav {
   border-bottom: 0.5px #3a4712 solid;
 }
 
+#navbarNav {
+  margin-right: 4%;
+}
 #navbarNav ul {
   width: 100%;
   display: flex;
