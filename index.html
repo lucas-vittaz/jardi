@@ -189,8 +189,8 @@
                 <li>Taille d'arbres fruitiers, d'oliviers et de rosiers</li>
                 <li>Préparation de potagers</li>
               </ul>
+                <div class="prestations_img"></div>
             </div>
-            <div class="prestations_img"></div>
           </div>
         </div>
         <div class="col-sm-6">
@@ -237,7 +237,7 @@
 
   <!-- ---Nos réalisations--- -->
 
-  <section id="#realisations">
+  <section id="realisations">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -281,13 +281,8 @@
             </button>
           </div>
       </div>
-      <!-- <div class="col-sm-12 col-md-7">
-        <p>Jardi'CA, vous propose son savoir-faire pour la conception et l'aménagement de votre jardin. Engazonnement, élagage, création de massif...<br>
-          Nous vous accompagnons de la conception jusqu'a la réalisation de votre jardins paysagé.<br> voici quelques exemples de nos réalisations</p>
-      </div> -->
+      </div>
     </div>
-    </div>
-    
   </section>
 
   <!-- ---Nos avis--- -->
@@ -457,7 +452,7 @@
                 <div class="form-row">
                   <div class="col  mb-3">
                     <label><h3>Votre message</h3></label>
-                    <input type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." required><?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?></textarea>
+                    <textarea type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." required rows="5" cols="33"><?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?></textarea>
                   </div>
               </div>
               <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>

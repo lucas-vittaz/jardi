@@ -52,6 +52,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 10;
+  border-bottom: 0.5px #3a4712 solid;
 }
 
 #navbarNav ul {
@@ -145,26 +146,26 @@ header {
   transition: background-color 300ms linear;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
-  color: white;
   text-decoration: none !important;
 }
 
-.masthead {
-  color: whitesmoke;
-}
-.masthead-contact {
-  text-decoration: none;
-}
-.masthead a {
-  color: whitesmoke;
+#masthead-title P {
+  color: white;
 }
 
-.fa-envelope {
+#masthead-contact p {
+  color: white;
+  text-decoration: none;
+}
+#masthead-contact a {
+  color: white;
+  text-decoration: none;
+}
+#masthead-contact .fa-envelope {
   color: white;
   margin-right: 10px;
 }
-
-.fa-phone {
+#masthead-contact .fa-phone {
   color: white;
   margin-right: 10px;
 }
@@ -200,29 +201,31 @@ header {
 }
 
 .card {
-  position: relative;
   background-color: #698020;
   border-left: 5px solid #3a4712;
+  color: white;
   /* border-right: 5px solid $my-primary; */
 }
-
-.card-line {
+.card .card-line {
   width: 50%;
   height: 2px;
-  background-color: #3a4712;
+  background-color: white;
 }
-
-.card ul li {
-  list-style: url("/img/others/liste_style.svg");
+.card .card ul li {
+  list-style: url("/img/others//liste_style.svg");
 }
-
-.prestations_img {
+.card .card-body {
+  position: relative;
+}
+.card .prestations_img {
   position: absolute;
+  bottom: -20px;
+  right: -10px;
   background-image: url("/img/others/tax_credit.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 }
 
 @media (max-width: 575.98px) {
@@ -306,22 +309,15 @@ header {
   }
 }
 /* ---Nos realisations--- */
-#realisations_img {
+#realisations {
+  background-color: #d1d8bc;
+}
+#realisations #realisations_img {
   background-image: url("realisations_img.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
   width: auto;
-}
-
-#realisations {
-  background-image: linear-gradient(to bottom, #698020 100% white white);
-}
-
-#realisations a {
-  color: #698020;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 /* ---Nos avis--- */

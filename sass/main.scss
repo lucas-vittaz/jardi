@@ -5,7 +5,6 @@
 // font-family: "Italiana", serif;
 // font-family: 'DM Sans', sans-serif;
 
-
 // VARIABLES
 // Main colors
 $my-primary: #3a4712;
@@ -22,7 +21,6 @@ $border-profile: white;
 // $bg-cards: #f3f2f2;
 $shadow-cards: #c0c0c0;
 $bg-form: #d1d8bc;
-
 
 body {
   overflow-x: hidden;
@@ -52,7 +50,7 @@ h3 {
   font-weight: 700;
 }
 
-h4{
+h4 {
   font-family: "Italiana", serif;
   color: whitesmoke;
   font-size: 20px;
@@ -74,6 +72,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 10;
+  border-bottom: 0.5px #3a4712 solid;
 }
 
 #navbarNav {
@@ -167,38 +166,28 @@ header {
   color: #ffffff;
   text-decoration: none !important;
 }
-#masthead-title {
-}
-
-#masthead-contact {
-}
 
 #masthead-title P {
   color: white;
 }
 
-#masthead-contact p {
-  color: white;
-  text-decoration: none !important;
-}
-
-.masthead {
-  color: whitesmoke;
-  &-contact{
-      text-decoration: none;
+#masthead-contact {
+  p {
+    color: white;
+    text-decoration: none;
   }
   a {
-    color: whitesmoke;
+    color: white;
+    text-decoration: none;
   }
-}
-
-.fa-envelope {
-  color: white;
-  margin-right: 10px;
-}
-.fa-phone {
-  color: white;
-  margin-right: 10px;
+  .fa-envelope {
+    color: white;
+    margin-right: 10px;
+  }
+  .fa-phone {
+    color: white;
+    margin-right: 10px;
+  }
 }
 
 /* ---A propos--- */
@@ -230,28 +219,31 @@ header {
   height: auto;
 }
 .card {
-  position: relative;
   background-color: $bg-cards;
   border-left: 5px solid $my-primary;
+  color: white;
   /* border-right: 5px solid $my-primary; */
-}
-.card-line {
-  width: 50%;
-  height: 2px;
-  background-color: $my-primary;
-}
-.card ul li {
-  list-style: url("/img/others/liste_style.svg");
-}
-
-.prestations_img {
-  position: absolute;
-
-  background-image: url("/img/others/tax_credit.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 250px;
-  height: 250px;
+  .card-line {
+    width: 50%;
+    height: 2px;
+    background-color: white;
+  }
+  .card ul li {
+    list-style: url("/img/others//liste_style.svg");
+  }
+  .card-body {
+    position: relative;
+  }
+  .prestations_img {
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    background-image: url("/img/others/tax_credit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -332,27 +324,17 @@ header {
 }
 
 /* ---Nos realisations--- */
-
-#realisations_img {
-  background-image: url("realisations_img.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
-}
 #realisations {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(105, 128, 32, 1) 100% white rgba(255, 255, 255, 1)
-  );
-}
-#realisations {
-  a {
-    color: $my-secondary;
-    font-weight: bold;
-    text-decoration: none;
+  background-color: #d1d8bc;
+  #realisations_img {
+    background-image: url("realisations_img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
   }
 }
+
 /* ---Nos avis--- */
 
 .my-card {
