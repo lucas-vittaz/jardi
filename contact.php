@@ -88,6 +88,7 @@ if(!empty($errors)){
     header('Location: index.php');
 }
 
+?>
 
 
 

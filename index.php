@@ -1,17 +1,17 @@
-<!-- <?php
+<?php
   session_start();
-?> -->
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="google-site-verification" content="..." />
+    <!-- <meta name="google-site-verification" content="..." />
     <meta name="robots" content="translate" />
     <meta name="googlebot" content="translate" />
     <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="googlebot" content="index, follow" /> -->
 
     <!-- Primary Meta Tags -->
     <title>Jardi'CA - Entretien d’espaces verts</title>
@@ -103,7 +103,7 @@
                 <a class="nav-link" href="#réalsiations">| Nos réalisations |</a>
               </li>
             </ul>
-              <div id="contact" class="btn"><a href="#contact">Contactez-nous</a></div>
+              <div id="btncontact" class="btn"><a href="#contact">Contactez-nous</a></div>
           </div>
         </div>
       </nav>
@@ -388,7 +388,7 @@
       <div class="row">
         <div class="col">
 
-          <!-- <?php
+          <?php
             if(array_key_exists('errors', $_SESSION)): ?> 
               <div class="alert alert-danger">
                 <?= implode('li', $_SESSION['errors']); ?>
@@ -399,7 +399,7 @@
               <div class="alert alert-success">
                 Votre e-mail a bien été envoyé !
               </div>
-          <?php endif;?> -->
+          <?php endif;?>
 
           <div class="form-bg p-2">
             <form action="contact.php" method="POST" class="needs-validation">
@@ -714,10 +714,10 @@ map.addLayer({
 </body>
 </html>
 
-<!-- <?php
+<?php
 
 unset($_SESSION['inputs']);
 unset($_SESSION['success']);
 unset($_SESSION['errors'];
 
-?> -->
+?>

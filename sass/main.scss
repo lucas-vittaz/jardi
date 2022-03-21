@@ -115,7 +115,7 @@ nav {
   border: none;
 }
 
-#contact {
+#btncontact {
   margin-right: 1rem;
   a {
     white-space: nowrap;
@@ -323,7 +323,12 @@ header {
 
 /* ---Nos realisations--- */
 #realisations {
-  background-color: #d1d8bc;
+  background: rgb(105, 128, 32);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 128, 32, 0.3) 35%,
+    rgba(241, 241, 241, 0.3) 100%
+  );
   #realisations_img {
     background-image: url("realisations_img.jpg");
     background-size: contain;
@@ -370,6 +375,14 @@ header {
 }
 
 /* ---Nous contacter--- */
+#contact {
+  background: rgb(105, 128, 32);
+  background: linear-gradient(
+    0deg,
+    rgba(105, 128, 32, 1) 0%,
+    rgba(241, 241, 241, 1) 100%
+  );
+}
 .form-bg {
   background-color: $bg-form;
   width: AUTO;
@@ -392,7 +405,8 @@ form {
 /* ---footer--- */
 footer {
   background-color: #d1d8bc;
-  clip-path: circle(96.8% at 50% 100%);
+  // clip-path: circle(96.8% at 50% 100%);
+  // overflow: visible;
 }
 
 .footer-logo {
