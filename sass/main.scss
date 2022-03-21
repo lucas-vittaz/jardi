@@ -159,7 +159,7 @@ header {
   text-decoration: none !important;
 }
 .btn-enter:hover {
-  transition: background-color 300ms linear;
+  transition: background-color 0.5s ease-in-out;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   text-decoration: none !important;
@@ -402,6 +402,7 @@ footer {
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 footer a {
   text-decoration: underline;
