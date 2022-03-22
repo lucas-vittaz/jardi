@@ -39,6 +39,7 @@ h2 {
   font-family: "Punarbhaba", serif;
   color: $my-secondary;
   font-weight: bold;
+  margin-bottom: 3rem !important;
 }
 h3 {
   font-family: "Punarbhaba", serif;
@@ -51,14 +52,24 @@ h4 {
 }
 h5 {
   font-family: "Punarbhaba", serif;
-  color: whitesmoke;
+  color: #3a4712;
 }
-
 p {
   font-family: "DM Sans", sans-serif;
 }
 li {
   font-family: "DM Sans", sans-serif;
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+  section {
+    padding: 2rem;
+  }
+}
+@media (min-width: 901px) and (max-width: 5000px) {
+  section {
+    padding: 6rem;
+  }
 }
 
 /* ---navBar--- */
@@ -200,8 +211,8 @@ header {
   height: auto;
   overflow: hidden;
   border-radius: 5px 5px 5px 5px;
-  background-color: red;
   user-select: none;
+  box-shadow: 3px 3px 5px $shadow-cards;
 }
 #propos a {
   color: $my-secondary;
@@ -220,22 +231,21 @@ header {
   background-color: $bg-cards;
   border-left: 5px solid $my-primary;
   color: white;
-  /* border-right: 5px solid $my-primary; */
+  box-shadow: 1px 3px 5px $shadow-cards;
+
   .card-line {
     width: 50%;
     height: 2px;
     background-color: white;
   }
-  .card ul li {
-    list-style: url("/img/others//liste_style.svg");
-  }
+
   .card-body {
     position: relative;
   }
   .prestations_img {
     position: absolute;
-    bottom: -20px;
-    right: -10px;
+    bottom: -25%;
+    right: -12%;
     background-image: url("/img/others/tax_credit.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -243,86 +253,34 @@ header {
     height: 150px;
   }
 }
-
-@media (max-width: 575.98px) {
-  .card {
-    margin-bottom: 10rem;
-  }
+.card-title {
+  position: relative;
+}
+.card ul li {
+  list-style: url("/img/others/liste_style.svg") !important;
+}
+.card ul li::marker {
+  font-size: 2rem;
+}
+.bold-title {
+  color: whitesmoke;
+  font-family: Italiana;
+  font-weight: bolder;
+  font-size: 50px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
   .prestations_img {
-    bottom: -40%;
-    right: 20%;
-    width: 200px;
-    height: 200px;
-  }
-  .my-lottie-logo {
-    display: NONE;
+    bottom: -25% !important;
+    right: 80% !important;
   }
 }
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .card {
-    margin-bottom: 10rem;
-  }
+@media (min-width: 0px) and (max-width: 650px) {
   .prestations_img {
-    bottom: -32%;
-    right: 10%;
-    width: 200px;
-    height: 200px;
-  }
-  .my-lottie-logo {
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    bottom: 10%;
-    right: 2%;
+    display: none;
   }
 }
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .card {
-    margin-bottom: 5rem;
-  }
-  .prestations_img {
-    bottom: -22%;
-    right: -20%;
-    width: 200px;
-    height: 200px;
-  }
-  .my-lottie-logo {
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    bottom: 0%;
-    right: 9%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .prestations_img {
-    bottom: -18%;
-    right: -15%;
-  }
-  .my-lottie-logo {
-    position: absolute;
-    bottom: 0%;
-    right: 10%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .prestations_img {
-    bottom: -18%;
-    right: -15%;
-  }
-  .my-lottie-logo {
-    position: absolute;
-    bottom: 0%;
-    right: 10%;
-  }
-}
-
 /* ---Nos realisations--- */
-#realisations {
+#réalisations {
   background: rgb(105, 128, 32);
   background: linear-gradient(
     180deg,
@@ -337,13 +295,12 @@ header {
     width: auto;
   }
 }
+$carousel-control-width: 25% !important;
 
 /* ---Nos avis--- */
 
 .my-card {
   position: relative;
-  height: 200px;
-  width: 400px;
   margin: 0 1.5rem;
   background-color: $bg-cards;
   border-radius: 5px;

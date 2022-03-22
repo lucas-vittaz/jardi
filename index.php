@@ -75,7 +75,7 @@
   <!-- ---Navbar--- -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="container">
           <a id="nav-logo" class="navbar-brand mx-5" href="/"></a>
           <button
             class="navbar-toggler"
@@ -100,7 +100,7 @@
                 <a class="nav-link" href="#prestations">| Nos prestations |</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#réalsiations">| Nos réalisations |</a>
+                <a class="nav-link" href="#réalisations">| Nos réalisations |</a>
               </li>
             </ul>
               <div id="btncontact" class="btn"><a href="#contact">Contactez-nous</a></div>
@@ -110,7 +110,7 @@
 
   <!-- ---Header--- -->
 
-      <header>
+      <header id="accueil">
         <div id="header-1" class="container py-2">
           <div class="row" id="masthead-title">
             <div class="col">
@@ -126,13 +126,12 @@
             </div>
           </div>
         </div>
-        <div id="header-2" class="container ">
+        <div id="header-2" class="container">
           <div class="row" id="masthead-contact">
-            <div class="col-3">
-              <i class="fa-solid fa-phone"></i>
-              <p>06 42 00 66 77</p>
+            <div class="col-sm-12 col-md-3 d-flex">
+              <i class="fa-solid fa-phone"></i><p>06 42 00 66 77</p>
             </div>
-            <div class="col-3">
+            <div class="col-sm-12 col-md-4 ">
               <i class="fa-solid fa-envelope"></i>
               <a href="mailto:contact@jardica.net" target="_blank">contact@jardica.net</a>
             </div>
@@ -143,7 +142,7 @@
   <!-- ---A propos--- -->
 
   <section id="propos">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-8 col-xl-8 col-md-6 col-sm-12">
           <h2 class="">A propos</h2>
@@ -166,7 +165,7 @@
   <section id="prestations">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-sm-12 col-md-7 m-auto">
           <h2>Nos prestations</h2>
           <p class="card-text">
             Spécialisés dans l'entretien d'espaces verts, nous pouvons réaliser tous types de travaux.<br>
@@ -174,13 +173,10 @@
             Merci de nous contacter afin de bénéficier d'un devis gratuit
           </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12 col-md-5">
+          <h5 class="card-title text-center"><span class="bold-title">01</span>Entretien d'espaces verts</h5>
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Entretien d'espaces verts</h5>
-              <div class="card-line m-auto"></div>
+            <div class="card-body m-auto">
               <p class="card-text"></p>
               <ul>
                 <li>Tonte de pelouses (toutes surfaces)</li>
@@ -189,15 +185,16 @@
                 <li>Taille d'arbres fruitiers, d'oliviers et de rosiers</li>
                 <li>Préparation de potagers</li>
               </ul>
-                <div class="prestations_img"></div>
             </div>
+            <div class="prestations_img"></div>
           </div>
         </div>
-        <div class="col-sm-6">
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-5">
+          <h5 class="card-title text-center"><span class="bold-title">02</span>Élagage</h5>
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Élagage</h5>
-              <div class="card-line m-auto"></div>
+            <div class="card-body m-auto">
               <p class="card-text"></p>
               <ul>
                 <li>Élagage et abattage</li>
@@ -208,11 +205,35 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col"></div>
+        <div class="col-sm-12 col-md-5">
+          <lottie-player
+            class="my-lottie-logo text-center"
+            src="https://assets2.lottiefiles.com/packages/lf20_mdmwone8.json"
+            background="transparent"
+            speed="0.5"
+            style="width: 320px; height: 320px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-5">
+          <lottie-player
+            class="my-lottie-logo text-center"
+            src="https://assets9.lottiefiles.com/packages/lf20_mxlw4pl5.json"
+            background="transparent"
+            speed="0.5"
+            style="width: 320px; height: 320px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <div class="col-sm-12 col-md-5 m-auto">
+          <h5 class="card-title text-center"><span class="bold-title">03</span>Création paysagère</h5>
           <div class="card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Création paysagère</h5>
-              <div class="card-line m-auto"></div>
+            <div class="card-body m-auto">
               <p class="card-text"></p>
               <ul>
                 <li>Engazonnement (création de pelouses initiale ou renouvelement)</li>
@@ -224,28 +245,19 @@
         </div>
       </div>
     </div>
-    <lottie-player
-      class="my-lottie-logo"
-      src="https://assets2.lottiefiles.com/packages/lf20_mdmwone8.json"
-      background="transparent"
-      speed="0.5"
-      style="width: 320px; height: 320px"
-      loop
-      autoplay
-    ></lottie-player>
   </section>
 
   <!-- ---Nos réalisations--- -->
 
-  <section id="realisations">
-    <div class="container">
+  <section id="réalisations">
+    <div class="container-fluid">
       <div class="row">
         <div class="col">
           <h2 class="text-center">Nos réalisations</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-9 col-md-9 m-auto">
+        <div class="col-sm-8 col-md-8 m-auto">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -288,7 +300,7 @@
   <!-- ---Nos avis--- -->
 
   <section id="rating">
-    <div class="container m-auto">
+    <div class="container-fluid">
       <div class="row">
         <div class="col text-center">
           <h2>Avis clients</h2>
@@ -296,11 +308,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-3">
-          <div class="my-card my-4 my-xl-1">
+        <div class="col-sm-12 col-md-4 mb-5">
+          <div class="my-card">
             <div class="profile profile-1"></div>
             <div class="row">
-              <div class="d-flex col justify-content-between mt-5 mb-3">
+              <div class="d-flex col justify-content-between py-1 px-3 mt-5 mb-3">
                 <h4>
                   Bazantay Jeremy
                 </h4>
@@ -314,20 +326,20 @@
               </div>
             </div>
             <div class="row">
-              <p class="">
+              <p class="mx-1">
                 Nous avons confié  des travaux d’élagage dans notre propriété à l’entreprise Jardi C/A.
                 Charlie est très professionnel .
                 Je recommande cette entreprise à tous les Chapelains.</p>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3">
-          <div class="my-card my-4 my-xl-1">
+        <div class="col-sm-12 col-md-4 mb-5">
+          <div class="my-card">
             <div class="profile profile-1"></div>
             <div class="row">
-              <div class="d-flex col justify-content-between mt-5 mb-3">
+              <div class="d-flex col justify-content-between py-1 px-3 mt-5 mb-3">
                 <h4>
-                  Bazantay Jeremy
+                  J Lemaire
                 </h4>
                 <div>
                   <i class="fa-solid fa-star" style="color:yellow";></i>
@@ -339,20 +351,18 @@
               </div>
             </div>
             <div class="row">
-              <p class="col">
-                Nous avons confié  des travaux d’élagage dans notre propriété à l’entreprise Jardi C/A.
-                Charlie est très professionnel .
-                Je recommande cette entreprise à tous les Chapelains.</p>
+              <p class="mx-1">
+              Tres bonne expérience ! Nous avons sollicité Jardi'Chacha pour la taille de nos haies. Le travail est soigné, le ramassage aussi. Aucun dégât sur nos autres arbres et arbustes ou dans le potager. Génial ! Nous recommandons sans hésitation !</p>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3">
-          <div class="my-card my-4 my-xl-1">
+        <div class="col-sm-12 col-md-4 mb-5">
+          <div class="my-card">
             <div class="profile profile-1"></div>
             <div class="row">
-              <div class="d-flex col justify-content-between mt-5 mb-3">
+              <div class="d-flex col justify-content-between py-1 px-3 mt-5 mb-3">
                 <h4>
-                  Bazantay Jeremy
+                  Bonnetaud Virginie
                 </h4>
                 <div>
                   <i class="fa-solid fa-star" style="color:yellow";></i>
@@ -364,10 +374,9 @@
               </div>
             </div>
             <div class="row">
-              <p class="col">
-                Nous avons confié  des travaux d’élagage dans notre propriété à l’entreprise Jardi C/A.
-                Charlie est très professionnel .
-                Je recommande cette entreprise à tous les Chapelains.</p>
+              <p class="mx-1">
+              Travail consciencieux, résultat impeccable répondant à nos attentes.
+              Jardinier très sympathique, à l'écoute du client.</p>
             </div>
           </div>
         </div>
@@ -378,7 +387,7 @@
   <!-- ---Nous contacter--- -->
 
   <section id="contact">
-    <div class="container text-center">
+    <div class="container-fluid text-center">
       <div class="row">
           <h2>Contactez-nous</h2>
           <p class="text-justify">Vous etes un particulier, une entreprise ou une co-propriété ?<br>
@@ -402,53 +411,29 @@
           <?php endif;?>
 
           <div class="form-bg p-2">
-            <form action="contact.php" method="POST" class="needs-validation">
+            <form action="contact.php" method="POST">
               <div class="form-row">
                 <div class="row">
                   <div class="col mb-3">
-                    <label><h3>Nom</h3></label>
-                    <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>" required>
-                    <div class="invalid-feedback">
-                      <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre nom.
-                    </div>
+                    <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Votre Nom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>" required>
                   </div>
                   <div class="col mb-3">
-                    <label><h3>Prénom</h3></label>
-                    <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : '';?>" required>
-                    <div class="invalid-feedback">
-                      <i class="fa-solid fa-user" style="color:red";></i> Veuillez entrer votre prénom.
-                    </div>
+                    <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="Votre Prénom" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : '';?>" required>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col mb-3">
-                    <!-- <div class="input-group"> -->
-                      <label><h3>E-mail</h3></label>
-                      <input type="email" name="mail" class="form-control" id="validationCustomUsername" placeholder="" aria-describedby="inputGroupPrepend"  value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : '';?>" required>
-                      <div class="invalid-feedback">
-                        <i class="fa-solid fa-at" style="color:red";></i> Veuillez entrer votre adresse mail.
-                      </div>
-                    <!-- </div> -->
+                      <input type="email" name="email" class="form-control" id="validationCustomUsername" placeholder="Votre E-mail" aria-describedby="inputGroupPrepend"  value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : '';?>" required>
                   </div>
                   <div class="col mb-3">
-                    <label><h3>Numéro de téléphone</h3></label>
-                    <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : '';?>" required>
-                      <div class="invalid-feedback">
-                        <i class="fa-solid fa-location-pin" style="color:red";></i> Veuillez entrer votre numéro de téléphone.
-                      </div>
+                    <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Votre téléphone" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : '';?>" required>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col mb-3">
-                    <label><h3>Lieu d'intervention</h3></label>
-                    <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="" value="<?= isset($_SESSION['inputs']['location']) ? $_SESSION['inputs']['location'] : '';?>" required>
-                      <div class="invalid-feedback">
-                        <i class="fa-solid fa-phone" style="color:red";></i> Veuillez entrer le lieu d'intervention.
-                      </div>
+                    <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Lieu d'intervention" value="<?= isset($_SESSION['inputs']['location']) ? $_SESSION['inputs']['location'] : '';?>" required>
                   </div>               
                   <div class="col mb-3">
-                    <label><h3>Service</h3></label>
-
                       <select class="form-select" name="type" aria-label="Default select example" required>
                         <option value="" selected>Type de demande</option>
                         <option value="1">Devis</option>
@@ -460,8 +445,7 @@
                 </div>
                 <div class="form-row">
                   <div class="col  mb-3">
-                    <label><h3>Votre message</h3></label>
-                    <textarea type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." required rows="5" cols="33"><?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?></textarea>
+                    <textarea type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." required rows="5" cols="33" value="<?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?>"></textarea>
                   </div>
               </div>
               <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>
@@ -480,75 +464,78 @@
   <!-- ---Footer--- -->
 
   <footer>
-    <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
-      <div class="col mx-5 footer-logo"></div>
-      <div class="col mx-5">
-        <h3>Plan du site</h3>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#Accueil" class="nav-link p-0 text-muted">Accueil</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#propos" class="nav-link p-0 text-muted">A propos</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#prestations" class="nav-link p-0 text-muted"
-              >Nos prestations</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#réalisations" class="nav-link p-0 text-muted"
-              >Réalisations</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#avis" class="nav-link p-0 text-muted">Avis clients</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#contact" class="nav-link p-0 text-muted"
-              >Nous contacter</a
-            >
-          </li>
-        </ul>
+    <div class="container-fluid">
+      <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
+        <div class="col footer-logo"></div>
+        <div class="col text-center">
+          <h3>Plan du site</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#Accueil" class="nav-link p-0 text-muted">Accueil</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#propos" class="nav-link p-0 text-muted">A propos</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#prestations" class="nav-link p-0 text-muted"
+                >Nos prestations</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#réalisations" class="nav-link p-0 text-muted"
+                >Réalisations</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#avis" class="nav-link p-0 text-muted">Avis clients</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#contact" class="nav-link p-0 text-muted"
+                >Nous contacter</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center">
+          <h3>Contact</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              
+              <p><i class="fa-solid fa-location-dot"></i> 44240 La Chapelle-sur-Erdre</p>
+            </li>
+            <li class="nav-item mb-2">
+              
+              <p><i class="fa-solid fa-phone" id="phone-footer"></i> 06 42 00 66 77</p>
+            </li>
+            <li class="nav-item mb-2">
+              <p><i class="fa-solid fa-envelope" id="envelope-footer"> </i> <a href="mailto:contact@jardica.net">contact@jardica.net</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col text-center">
+          <h3>Restez connecté !</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <p><a href="https://www.facebook.com/JardinierChapellesurerdre" target="_blank" class="nav-link p-0 text-muted"
+                ><i class="fa-brands fa-facebook-square"></i
+              > Facebook</a></p>
+            </li>
+            <li class="nav-item mb-2">
+              <p><a href="https://www.leboncoin.fr/profil/0a92a70d-8c13-4241-9c18-25cd8a1bebaa/offres" target="_blank" class="nav-link p-0 text-muted">
+                <i class="fa-solid fa-shop"></i>
+              Location de matériel</a></p>
+            </li>
+            <li class="nav-item mb-2">
+              <p><a href="https://www.google.com/maps/place/Jardi'CA/@47.3032138,-1.5463036,15z/data=!4m5!3m4!1s0x0:0x1eaa6899f9bc8382!8m2!3d47.3032138!4d-1.5463036" target="_blank" class="nav-link p-0 text-muted">
+                <i class="fa-brands fa-google"></i>
+               Google Buisness</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="justify-content-between py-4 my-4 border-top">
+          <p class="text-center">© 2022 Jardi CA, tous droits réservés.</p>
+        </div>
       </div>
-      <div class="col mx-5">
-        <h3>Contact</h3>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            
-            <p><i class="fa-solid fa-location-dot"></i> 44240 La Chapelle-sur-Erdre</p>
-          </li>
-          <li class="nav-item mb-2">
-            
-            <p><i class="fa-solid fa-phone" id="phone-footer"></i> 06 42 00 66 77</p>
-          </li>
-          <li class="nav-item mb-2">
-            <p><i class="fa-solid fa-envelope" id="envelope-footer"> </i> <a href="mailto:contact@jardica.net">contact@jardica.net</a></p>
-          </li>
-        </ul>
-      </div>
-      <div class="col mx-5">
-        <h3>Restez connecté !</h3>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <p><a href="#" class="nav-link p-0 text-muted"
-              ><i class="fa-brands fa-facebook-square"></i
-            > Facebook</a></p>
-          </li>
-          <li class="nav-item mb-2">
-            <p><a href="#" class="nav-link p-0 text-muted">
-              <i class="fa-brands fa-instagram-square"></i>
-            Instagram</a></p>
-          </li>
-          <li class="nav-item mb-2">
-            <p><a href="#" class="nav-link p-0 text-muted">
-              <i class="fa-brands fa-instagram-square"></i>
-             Google Buisness</a></p>
-          </li>
-        </ul>
-      </div>
-    <div class="justify-content-between py-4 my-4 border-top">
-      <p class="text-center">© 2022 Jardi CA, tous droits réservés.</p>
     </div>
   </footer>
 
@@ -718,6 +705,6 @@ map.addLayer({
 
 unset($_SESSION['inputs']);
 unset($_SESSION['success']);
-unset($_SESSION['errors'];
+unset($_SESSION['errors']);
 
 ?>
