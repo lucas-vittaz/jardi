@@ -174,10 +174,9 @@
           </p>
         </div>
         <div class="col-sm-12 col-md-5">
-          <h5 class="card-title text-center"><span class="bold-title">01</span>Entretien d'espaces verts</h5>
+          <h5 class="card-title"><span class="bold-title">01</span>Entretien d'espaces verts</h5>
           <div class="card">
             <div class="card-body m-auto">
-              <p class="card-text"></p>
               <ul>
                 <li>Tonte de pelouses (toutes surfaces)</li>
                 <li>Entretien de pelouses (scarification et regarnissage)</li>
@@ -192,10 +191,9 @@
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-5">
-          <h5 class="card-title text-center"><span class="bold-title">02</span>Élagage</h5>
+          <h5 class="card-title"><span class="bold-title">02</span>Élagage</h5>
           <div class="card">
             <div class="card-body m-auto">
-              <p class="card-text"></p>
               <ul>
                 <li>Élagage et abattage</li>
                 <li>Broyage de branches</li>
@@ -231,10 +229,9 @@
           ></lottie-player>
         </div>
         <div class="col-sm-12 col-md-5 m-auto">
-          <h5 class="card-title text-center"><span class="bold-title">03</span>Création paysagère</h5>
+          <h5 class="card-title"><span class="bold-title">03</span>Création paysagère</h5>
           <div class="card">
             <div class="card-body m-auto">
-              <p class="card-text"></p>
               <ul>
                 <li>Engazonnement (création de pelouses initiale ou renouvelement)</li>
                 <li>Création de massifs</li>
@@ -327,8 +324,8 @@
             </div>
             <div class="row">
               <p class="mx-1">
-                Nous avons confié  des travaux d’élagage dans notre propriété à l’entreprise Jardi C/A.
-                Charlie est très professionnel .
+                Nous avons confié  des travaux d’élagage dans notre propriété à l’entreprise Jardi C/A.<br>
+                Charlie est très professionnel.<br>
                 Je recommande cette entreprise à tous les Chapelains.</p>
             </div>
           </div>
@@ -375,8 +372,8 @@
             </div>
             <div class="row">
               <p class="mx-1">
-              Travail consciencieux, résultat impeccable répondant à nos attentes.
-              Jardinier très sympathique, à l'écoute du client.</p>
+              Travail consciencieux, résultat impeccable répondant à nos attentes.<br>
+              Jardinier très sympathique, à l'écoute du client.<br><br></p>
             </div>
           </div>
         </div>
