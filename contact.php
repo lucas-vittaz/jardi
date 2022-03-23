@@ -18,6 +18,6 @@ $body .= "FROM: ".$email. "\r\n";
 $body .= "FROM: ".$location. "\r\n";
 $body .= "FROM: ".$message. "\r\n";
 
-mail($to, $category, $body)  
-header('location: index.html')
+mail($to, $category, $body); 
+header('location: index.html');
 ?>
