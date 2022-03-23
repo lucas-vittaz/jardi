@@ -290,11 +290,11 @@ header {
 }
 /* ---Nos realisations--- */
 #réalisations {
-  background: rgb(105, 128, 32);
   background: linear-gradient(
-    180deg,
-    rgba(105, 128, 32, 0.3) 35%,
-    rgba(241, 241, 241, 0.3) 100%
+    0deg,
+    rgba(105, 128, 32, 0.05) 2.41%,
+    rgba(153, 164, 119, 0.0802335) 49.15%,
+    rgba(196, 196, 196, 0) 99.95%
   );
   #realisations_img {
     background-image: url("realisations_img.jpg");
@@ -342,16 +342,18 @@ $carousel-control-width: 25% !important;
 
 /* ---Nous contacter--- */
 #contact {
-  background: rgb(105, 128, 32);
+  border-bottom: 1px solid transparent !important;
+  border-radius: 50%, 50%, 0%, 0%;
   background: linear-gradient(
-    0deg,
-    rgba(105, 128, 32, 1) 0%,
-    rgba(241, 241, 241, 1) 100%
+    180deg,
+    rgba(61, 72, 26, 0.06) 0%,
+    rgba(255, 255, 255, 0) 100%
   );
 }
 .form-bg {
   background-color: $bg-form;
   width: AUTO;
+  border-radius: 5px;
 }
 form {
   select {

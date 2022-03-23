@@ -1,6 +1,3 @@
-<?php
-  session_start();
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -255,7 +252,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 m-auto">
+        <div class="col-sm-8 col-md-8 m-auto mb-5">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -393,43 +390,29 @@
           <div class="shape_section mb-5"></div>
       </div>
       <div class="row">
-        <div class="col">
-
-          <?php
-            if(array_key_exists('errors', $_SESSION)): ?> 
-              <div class="alert alert-danger">
-                <?= implode('li', $_SESSION['errors']); ?>
-              </div>
-          <?php endif;?>
-          <?php
-            if(array_key_exists('success', $_SESSION)): ?> 
-              <div class="alert alert-success">
-                Votre e-mail a bien été envoyé !
-              </div>
-          <?php endif;?>
-
+        <div class="col-9 m-auto">
           <div class="form-bg p-2">
-            <form action="contact.php" method="POST">
+            <form action="contact.php" method="POST" class="form">
               <div class="form-row">
                 <div class="row">
                   <div class="col mb-3">
-                    <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Votre Nom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>" required>
+                    <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Votre Nom"  required>
                   </div>
                   <div class="col mb-3">
-                    <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="Votre Prénom" value="<?= isset($_SESSION['inputs']['firstname']) ? $_SESSION['inputs']['firstname'] : '';?>" required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col mb-3">
-                      <input type="email" name="email" class="form-control" id="validationCustomUsername" placeholder="Votre E-mail" aria-describedby="inputGroupPrepend"  value="<?= isset($_SESSION['inputs']['mail']) ? $_SESSION['inputs']['mail'] : '';?>" required>
-                  </div>
-                  <div class="col mb-3">
-                    <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Votre téléphone" value="<?= isset($_SESSION['inputs']['tel']) ? $_SESSION['inputs']['tel'] : '';?>" required>
+                    <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="Votre Prénom" required>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col mb-3">
-                    <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Lieu d'intervention" value="<?= isset($_SESSION['inputs']['location']) ? $_SESSION['inputs']['location'] : '';?>" required>
+                      <input type="email" name="email" class="form-control" id="validationCustomUsername" placeholder="Votre E-mail" aria-describedby="inputGroupPrepend"  required>
+                  </div>
+                  <div class="col mb-3">
+                    <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Votre téléphone" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Lieu d'intervention" required>
                   </div>               
                   <div class="col mb-3">
                       <select class="form-select" name="type" aria-label="Default select example" required>
@@ -443,7 +426,7 @@
                 </div>
                 <div class="form-row">
                   <div class="col  mb-3">
-                    <textarea type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." required rows="5" cols="33" value="<?= isset($_SESSION['inputs']['subject']) ? $_SESSION['inputs']['subject'] : '';?>"></textarea>
+                    <textarea type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." required rows="5" cols="20"></textarea>
                   </div>
               </div>
               <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>
@@ -698,11 +681,3 @@ map.addLayer({
 
 </body>
 </html>
-
-<?php
-
-unset($_SESSION['inputs']);
-unset($_SESSION['success']);
-unset($_SESSION['errors']);
-
-?>
