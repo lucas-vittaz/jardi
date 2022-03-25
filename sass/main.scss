@@ -64,7 +64,7 @@ li {
 
 @media (min-width: 0px) and (max-width: 900px) {
   section {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 }
 @media (min-width: 901px) and (max-width: 5000px) {
@@ -301,20 +301,23 @@ header {
     background-image: url("realisations_img.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
+    height: auto;
     width: auto;
   }
 }
 $carousel-control-width: 25% !important;
 
 /* ---Nos avis--- */
-
+#rating {
+  padding: 0.5rem;
+}
 .my-card {
   position: relative;
-  margin: 0 1.5rem;
   background-color: $bg-cards;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #c0c0c0;
+  width: auto;
+  height: auto;
   p {
     font-size: 0.8rem;
     color: white;
