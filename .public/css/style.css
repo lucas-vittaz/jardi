@@ -209,7 +209,7 @@ header {
   overflow: hidden;
   border-radius: 5px 5px 5px 5px;
   user-select: none;
-  box-shadow: 3px 3px 5px #c0c0c0;
+  box-shadow: 5px 5px 10px #c0c0c0;
 }
 
 #propos a {
@@ -229,7 +229,7 @@ header {
   background-color: #698020;
   border-left: 5px solid #3a4712;
   color: whitesmoke;
-  box-shadow: 1px 3px 5px #c0c0c0;
+  box-shadow: 5px 5px 10px #c0c0c0;
   display: block;
 }
 .card .card-line {
@@ -299,7 +299,7 @@ header {
   margin: 0 1.5rem;
   background-color: #698020;
   border-radius: 5px;
-  box-shadow: 1px 3px 5px #c0c0c0;
+  box-shadow: 5px 5px 10px #c0c0c0;
 }
 .my-card p {
   font-size: 0.8rem;
@@ -350,7 +350,7 @@ form textarea {
 }
 
 #map {
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px #c0c0c0;
 }
 
 /* ---footer--- */
