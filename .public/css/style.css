@@ -393,10 +393,13 @@ footer a {
 /* ---recruitment--- */
 #recruitment {
   position: fixed;
+  -webkit-position: fixed;
   bottom: 0;
   right: 0;
   z-index: 100000000000000;
+  -webkit-animation: btn-recruitment 1s ease-in-out infinite alternate;
   animation: btn-recruitment 1s ease-in-out infinite alternate;
+  display: block;
 }
 
 @keyframes btn-recruitment {
