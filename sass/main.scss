@@ -403,3 +403,21 @@ footer a {
 #phone-footer {
   color: #698020;
 }
+
+/* ---recruitment--- */
+#recruitment {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100000000000000;
+  animation: btn-recruitment 1s ease-in-out infinite alternate;
+}
+
+@keyframes btn-recruitment {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
