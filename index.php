@@ -567,6 +567,18 @@
       }, false);
     })();
   </script>
+  <script>
+window.axeptioSettings = {
+  clientId: "6240919396d9bf5662489695",
+  cookiesVersion: "jardica",
+};
+ 
+(function(d, s) {
+  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+  e.async = true; e.src = "//static.axept.io/sdk.js";
+  t.parentNode.insertBefore(e, t);
+})(document, "script");
+</script>
     
 <!-- Map Script -->
 
@@ -696,7 +708,6 @@
       }
     });
   });
-
   </script>
 
 </body>
