@@ -1,22 +1,23 @@
 <?php
 
 $name = $_POST['name'];
-$firstName = $_POST['name'];
+$firstName = $_POST['firstname'];
 $email = $_POST['email'];
 $phone = $_POST['tel'];
 $location = $_POST['location'];
 $category = $_POST['type'];
 $message = $_POST['subject'];
 
-$to = "contact@jardica.net";
+$to = "lucasvittaz.pro@gmail.com";
 $body = '';
 
-$body .= "FROM: ".$category. "\r\n";
-$body .= "FROM: ".$name. "\r\n";
-$body .= "Email: ".$firstName. "\r\n";
-$body .= "FROM: ".$email. "\r\n";
-$body .= "FROM: ".$location. "\r\n";
-$body .= "FROM: ".$message. "\r\n";
+$body .= "-Type: ".$category. "\r\n";
+$body .= "-Nom: ".$name. "\r\n";
+$body .= "-Prénom: ".$firstName. "\r\n";
+$body .= "-E-mail: ".$email. "\r\n";
+$body .= "-Téléphone: ".$phone. "\r\n";
+$body .= "-Lieu d'intervention: ".$location. "\r\n";
+$body .= "-Demande: ".$message. "\r\n";
 
 mail($to, $category, $body); 
 header('location: index.html');
