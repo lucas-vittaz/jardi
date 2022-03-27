@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -69,7 +69,7 @@
     <link rel="stylesheet" href=".public\css\style.css" />
 
   </head>
-  <div id="recruitment"><a href="mailto: contact@jardica.net" target="_blank"><img src="/img/others/nousrecrutons.png" alt="Recrutement" height="auto" width="250px"></a></div>
+  <div id="recruitment"><a href="https://candidat.pole-emploi.fr/offres/recherche/detail/130CRFK" target="_blank"><img src="/img/others/nousrecrutons.png" alt="Recrutement" height="auto" width="250px"></a></div>
   <!-- ---Navbar--- -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -148,7 +148,7 @@
             Jardi'CA est une entreprise chapelaine, spécialisée dans la création et l'entretien d'espaces verts.<br><br>
             Notre équipe de passionnés intervient principalement auprès d'une clientèle locale, à la Chapelle sur Erdre et ses alentours. Nous privilégions également un réseau de fournisseurs et de collaborateurs de proximité.<br><br>
             Que vous soyez une entreprise, un particulier ou une co-propriété, nous mettons tout en œuvre pour réaliser vos travaux les plus exigeants. Pour connaître le détail de nos prestations, <a href="#prestations">cliquez ici !</a><br><br>
-            Pour toute question ou demande de contact, <a href="#contact"> cliquez ici !</a>
+            Pour toute question ou demande de devis, <a href="#contact"> cliquez ici !</a>
           </p>
         </div>
         <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 my-5" id="img">
@@ -166,12 +166,11 @@
         <div class="col-sm-12 col-md-7 m-auto">
           <h2>Nos prestations</h2>
           <p class="card-text">
-            Spécialisés dans l'entretien d'espaces verts, nous pouvons réaliser tous types de travaux : entretien ponctuel, entretien Annuel et remise en état de vos espaces verts.<br>
-            Le petit entretien d'espace vert, permet d'obtenir un crédit d'impôt de 50 %.<br>
-            L'élagage de tout type d'arbres et de toute hauteur fait également parti de notre savoir-faire.<br>
-            Passionnés de pelouses, nous réalisons très régulièrement des engazonnement de A à Z, et proposons aussi le suivis et l'entretien de vos gazons.<br>
-            Pour toute création de massifs et de plantations, n'hésitez pas à nous demander conseil, nous sommes là pour cela !<br><br>
-            Merci de nous contacter afin de bénéficier d'un devis gratuit.
+            Spécialisés dans l'entretien d'espaces verts, nous pouvons réaliser tous types de travaux : entretien ponctuel, entretien annuel et remise en état de vos espaces verts.<br>
+            Le petit entretien d'espace vert permet d'obtenir un crédit d'impôt de 50 %.<br><br>
+            L'élagage de tout type d'arbres et de toute hauteur fait également parti de nos savoir-faire.<br><br>
+            Également passionnés de pelouses, nous réalisons très régulièrement des engazonnement de A à Z, et proposons aussi le suivi et l'entretien de vos gazons.<br><br>
+            Pour toute création de massifs et de plantations, n'hésitez pas à nous demander conseil, nous sommes a votre écoute !<br>
           </p>
         </div>
         <div class="col-sm-12 col-md-5">
@@ -234,9 +233,9 @@
           <div class="card">
             <div class="card-body m-auto">
               <ul>
-                <li>Engazonnement (création de pelouses initiale ou renouvelement)</li>
+                <li>Engazonnement (création initiale et renouvellement de pelouses)</li>
                 <li>Création de massifs</li>
-                <li>Plantations</li>
+                <li>Plantations (arbres, arbutes, vivaces, bulbes, rosiers, ect)</li>
               </ul>
             </div>
           </div>
@@ -267,22 +266,22 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/réalisations/274773343_334464565307049_2230221044565975211_n (1).jpg" class="d-block w-100" alt="...">
+                <img src="/img/réalisations/91349260_124230075847006_1388343076010852352_n.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/img/réalisations/91349260_124230075847006_1388343076010852352_n.jpg" class="d-block w-100" alt="...">
+                <img src="/img/réalisations/274980269_662307198555660_1160602152317171359_n (1).jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="/img/réalisations/251371546_405079217762089_5303124604777460101_n.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/img/réalisations/118645619_170481194555227_5856862403641409560_n.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
                 <img src="/img/réalisations/274751621_691281301912019_7995885230946305209_n (1).jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="/img/réalisations/274980269_662307198555660_1160602152317171359_n (1).jpg" class="d-block w-100" alt="...">
+                <img src="/img/réalisations/87392217_114282266841787_8106647460056662016_n.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/réalisations/118645619_170481194555227_5856862403641409560_n.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -397,8 +396,8 @@
     <div class="container-fluid text-center">
       <div class="row">
           <h2>Contactez-nous</h2>
-          <p class="text-justify">Vous etes un particulier, une entreprise ou une Copropriété ?<br>
-            Pour toute demandes, laissez nous un message,  et nous y répondrons avec plaisir dans les plus brefs délais.</p>
+          <p class="text-justify">Vous êtes un particulier, une entreprise ou une copropriété ?<br>
+            Pour toute demande, laissez nous un message et nous y répondrons avec plaisir.</p>
           <div class="shape_section mb-5"></div>
       </div>
       <div class="row">
@@ -443,6 +442,17 @@
                 </div>
                 <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>
               </div>
+              <?php
+                if (isset($_GET['success'])){
+                $msgSuccess = " Votre demande à été bien envoyée !";
+                echo '<div class="alert alert-success">'.$msgSuccess.'</div>';
+                };
+
+                if (isset($_GET['error'])){
+                  $msgError = " Merci de remplir tout les champs";
+                  echo '<div class="alert alert-danger">'.$msgError.'</div>';
+                };
+              ?>
             </form>
           </div>
         </div>
@@ -456,7 +466,7 @@
   <!-- ---Footer--- -->
 
   <footer>
-    <div class="container-fluid py-5">
+    <div class="container-fluid p-5">
       <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
         <div class="col footer-logo"></div>
         <div class="col text-center">
@@ -492,8 +502,7 @@
           <h3>Contact</h3>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              
-              <p><i class="fa-solid fa-location-dot"></i> 44240 La Chapelle-sur-Erdre</p>
+              <p><i class="fa-solid fa-location-dot"></i> 44240 La Chapelle sur Erdre</p>
             </li>
             <li class="nav-item mb-2">
               
@@ -513,14 +522,14 @@
               > Facebook</a></p>
             </li>
             <li class="nav-item mb-2">
-              <p><a href="https://www.leboncoin.fr/profil/0a92a70d-8c13-4241-9c18-25cd8a1bebaa/offres" target="_blank" class="nav-link p-0 text-muted">
-                <i class="fa-solid fa-shop"></i>
-              Location de matériel</a></p>
-            </li>
-            <li class="nav-item mb-2">
               <p><a href="https://www.google.com/maps/place/Jardi'CA/@47.3032138,-1.5463036,15z/data=!4m5!3m4!1s0x0:0x1eaa6899f9bc8382!8m2!3d47.3032138!4d-1.5463036" target="_blank" class="nav-link p-0 text-muted">
                 <i class="fa-brands fa-google"></i>
                Google Buisness</a></p>
+            </li>
+            <li class="nav-item mb-2">
+              <p><a href="http://jardica.net" target="_blank" class="nav-link p-0 text-muted">
+                <i class="fa-solid fa-shop"></i>
+              Location de matériel</a></p>
             </li>
           </ul>
         </div>

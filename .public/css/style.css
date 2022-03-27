@@ -395,7 +395,7 @@ footer a {
   position: fixed;
   -webkit-position: fixed;
   bottom: 0;
-  right: 0;
+  right: 2%;
   z-index: 100000000000000;
   -webkit-animation: btn-recruitment 1s ease-in-out infinite alternate;
   animation: btn-recruitment 1s ease-in-out infinite alternate;
@@ -407,7 +407,7 @@ footer a {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
