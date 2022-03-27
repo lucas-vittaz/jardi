@@ -457,7 +457,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 mb-5">
-          <div id='map' style='width: auto; height: 350px;'></div>
+          <div id='map' style='width: auto; height: 370px;'></div>
         </div>
       </div>
     </div>
