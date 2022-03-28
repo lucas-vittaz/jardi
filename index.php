@@ -51,7 +51,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -62,6 +61,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href=".public\css\style.css" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
   </head>
   <div id="recruitment"><a href="https://candidat.pole-emploi.fr/offres/recherche/detail/130CRFK" target="_blank"><img src="/img/others/nousrecrutons.png" alt="Recrutement" height="auto" width="250px"></a></div>
@@ -563,7 +564,7 @@
       }, false);
     })();
   </script>
-  <script>
+<script>
 window.axeptioSettings = {
   clientId: "6240919396d9bf5662489695",
   cookiesVersion: "jardica",
@@ -578,15 +579,12 @@ window.axeptioSettings = {
     
 <!-- Map Script -->
 <script>
-var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
- 
- mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxYjN0d3h5MDViOTNqbWg0dHRlYTkxcyJ9.aJQFWCy29tbwhNWfxzqqQQ';
- var map = new mapboxgl.Map({
- container: 'map',
- style: 'mapbox://styles/mapbox/streets-v11'
- });
+mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxYjN0d3h5MDViOTNqbWg0dHRlYTkxcyJ9.aJQFWCy29tbwhNWfxzqqQQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
 </script>
-
 
 </body>
 </html>
