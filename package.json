@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mapbox-gl": "^2.7.1"
   }
+}

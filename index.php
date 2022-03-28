@@ -44,12 +44,6 @@
     />
     <meta property="twitter:image" content="onglet.png" />
 
-
-    <!-- MapBox -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
-
-
     <!-- style and CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -57,6 +51,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -547,6 +542,7 @@
 
   <!-- Form script -->
   <script src="/app.js"></script>
+  <!-- Cookies helper -->
   <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function() {
@@ -581,134 +577,16 @@ window.axeptioSettings = {
 </script>
     
 <!-- Map Script -->
+<script>
+var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+ 
+ mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxYjN0d3h5MDViOTNqbWg0dHRlYTkxcyJ9.aJQFWCy29tbwhNWfxzqqQQ';
+ var map = new mapboxgl.Map({
+ container: 'map',
+ style: 'mapbox://styles/mapbox/streets-v11'
+ });
+</script>
 
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFsZ2Fyb3MiLCJhIjoiY2t4OW5udDg3MTE3aTJ1bW42ZmthbWd4NSJ9.zv3nSQDhyH5aLFsMnw2jww';
-  const map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: 'mapbox://styles/mapbox/streets-v11', // style URL
-      center: [-1.551807, 47.298485], // starting position [lng, lat]
-      zoom: 9.5 // starting zoom
-    });
-    
-    map.on('load', () => {
-    // Add a data source containing GeoJSON data.
-    map.addSource('maine', {
-    'type': 'geojson',
-    'data': {
-      'type': 'Feature',
-      'geometry': {
-        'type': 'Polygon',
-        // These coordinates outline Maine.
-        'coordinates': [
-          [
-            [-1.597711, 47.333608],
-            [-1.592475, 47.328954],
-            [-1.593334, 47.327151],
-            [-1.588956, 47.324009],
-            [-1.585748, 47.317961],
-            [-1.586361, 47.314570],
-            [-1.587790, 47.314155],
-            [-1.584626, 47.312978],
-            [-1.584728, 47.312425],
-            [-1.584626, 47.312494],
-            [-1.584013, 47.312148],
-            [-1.584217, 47.311733],
-            [-1.582176, 47.311387],
-            [-1.581359, 47.311456],
-            [-1.580951, 47.309726],
-            [-1.581359, 47.309034],
-            [-1.580645, 47.308203],
-            [-1.579114, 47.308065],
-            [-1.578297, 47.307165],
-            [-1.579624, 47.303912],
-            [-1.585646, 47.298374],
-            [-1.585136, 47.295744],
-            [-1.584115, 47.294913],
-            [-1.585340, 47.293183],
-            [-1.585136, 47.292352],
-            [-1.586846, 47.284004],
-            [-1.585867, 47.278164],
-            [-1.583960, 47.272987],
-            [-1.568132, 47.271612],
-            [-1.564624, 47.269668],
-            [-1.563079, 47.269610],
-            [-1.562736, 47.269843],
-            [-1.562307, 47.269901],
-            [-1.559475, 47.270134],
-            [-1.558574, 47.269305],
-            [-1.558917, 47.265694],
-            [-1.555141, 47.264179],
-            [-1.555141, 47.261383],
-            [-1.553253, 47.258471],
-            [-1.550849, 47.257539],
-            [-1.551021, 47.256840],
-            [-1.548789, 47.256257],
-            [-1.544498, 47.256141],
-            [-1.540132, 47.255145],
-            [-1.535669, 47.259106],
-            [-1.538072, 47.265630],
-            [-1.527429, 47.277511],
-            [-1.526770, 47.283836],
-            [-1.532950, 47.291521],
-            [-1.532264, 47.295014],
-            [-1.532435, 47.297342],
-            [-1.529002, 47.303046],
-            [-1.531062, 47.305374],
-            [-1.531062, 47.308866],
-            [-1.534323, 47.312940],
-            [-1.537585, 47.314919],
-            [-1.542392, 47.315850],
-            [-1.543078, 47.318061],
-            [-1.540503, 47.319108],
-            [-1.542907, 47.327486],
-            [-1.546168, 47.329231],
-            [-1.547556, 47.333834],
-            [-1.552543, 47.335221],
-            [-1.553986, 47.338058],
-            [-1.557595, 47.338645],
-            [-1.558461, 47.340210],
-            [-1.560482, 47.340895],
-            [-1.560915, 47.342166],
-            [-1.563802, 47.344709],
-            [-1.563658, 47.347252],
-            [-1.565534, 47.347937],
-            [-1.566833, 47.351164],
-            [-1.571886, 47.352436],
-            [-1.572174, 47.352827],
-            [-1.574195, 47.353316],
-            [-1.574917, 47.349991],
-            [-1.597711, 47.333608]
-          ]
-        ]
-      }
-    }
-  });
-  
-  // Add a new layer to visualize the polygon.
-  map.addLayer({
-    'id': 'lcse',
-    'type': 'fill',
-    'source': 'maine', // reference the data source
-    'layout': {},
-    'paint': {
-      'fill-color': '#698020', // blue color fill
-      'fill-opacity': 0.2
-    }
-  });
-  // Add a black outline around the polygon.
-  map.addLayer({
-    'id': 'outline',
-    'type': 'line',
-    'source': 'maine',
-    'layout': {},
-    'paint': {
-      'line-color': '#000',
-      'line-width': 3
-      }
-    });
-  });
-  </script>
 
 </body>
 </html>
