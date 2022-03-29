@@ -10,7 +10,7 @@
 // Main colors
 $my-primary: #3a4712;
 $my-secondary: #698020;
-$my-test: #698020;
+$my-test: #b31717;
 
 // Section colors
 $bg-about: #f1f1f1;
@@ -314,6 +314,9 @@ header {
     width: 125px !important;
     height: 125px !important;
   }
+  #lottie-creation {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .prestations_img {
@@ -414,6 +417,13 @@ header {
     textarea {
       border-radius: 5px;
     }
+  }
+  #btn-submit {
+    background-color: $my-secondary !important;
+    font-weight: bold;
+    border: none;
+    color: white;
+    text-decoration: none;
   }
 }
 #map {

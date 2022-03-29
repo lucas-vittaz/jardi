@@ -452,7 +452,7 @@
                     <textarea type="text" name='subject' class="form-control" id="subject" placeholder="Précisez votre demande ..." required rows="5" cols="20"></textarea>
                   </div>
                 </div>
-                <button class="btn btn-primary" name="submit" type="submit">Envoyer</button>
+                <button id="btn-submit" class="btn btn-primary" name="submit" type="submit">Envoyer</button>
               </div>
               <?php
                 if (isset($_GET['success'])){

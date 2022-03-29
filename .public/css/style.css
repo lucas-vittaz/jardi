@@ -285,6 +285,10 @@ header #masthead-contact .fa-phone {
     width: 125px !important;
     height: 125px !important;
   }
+
+  #lottie-creation {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .prestations_img {
@@ -373,6 +377,13 @@ header #masthead-contact .fa-phone {
 }
 #contact form textarea {
   border-radius: 5px;
+}
+#contact #btn-submit {
+  background-color: #698020 !important;
+  font-weight: bold;
+  border: none;
+  color: white;
+  text-decoration: none;
 }
 
 #map {
