@@ -67,58 +67,58 @@ nav {
   z-index: 10;
   border-bottom: 0.5px #3a4712 solid;
 }
-
-#navbarNav {
+nav #navbarNav {
   margin-right: 4%;
 }
-#navbarNav ul {
+nav #navbarNav ul {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
-#nav-logo {
+nav #nav-logo {
   height: 8vh;
   padding-left: 150px;
   background-image: url("/img/logo/partial-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-.nav-link {
+nav .nav-link {
   color: #698020 !important;
   font-weight: bold;
 }
-
-.nav-link:hover {
+nav .nav-link:hover {
   transition: color 300ms linear;
   color: #3a4712 !important;
 }
-
-.btn {
+nav .btn {
   background-color: #698020 !important;
   font-weight: bold;
   border: none;
 }
-.btn a {
+nav .btn a {
   color: white;
   text-decoration: none;
 }
-
-.btn:hover {
+nav .btn:hover {
   transition: background-color 300ms linear;
   background-color: #3a4712 !important;
   border-color: #698020;
   border: none;
 }
-
-#btncontact {
+nav #btncontact {
   margin-right: 1rem;
 }
-#btncontact a {
+nav #btncontact a {
   white-space: nowrap;
 }
 
+@media (min-width: 0px) and (max-width: 991px) {
+  nav #navbarNav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 /* ---Header--- */
 header {
   position: relative;
@@ -129,31 +129,19 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-#header-1 {
+header #header-1 {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   width: auto;
   top: 47%;
   left: 5%;
 }
-
-#header-2 {
+header #header-2 {
   position: absolute;
   bottom: 15%;
   left: 5%;
 }
-
-@media (min-width: 0px) and (max-width: 768px) {
-  #header-1 {
-    top: 40%;
-  }
-
-  #header-2 {
-    bottom: 15%;
-  }
-}
-.btn-enter {
+header .btn-enter {
   background: transparent;
   color: white;
   font-weight: 500;
@@ -166,41 +154,46 @@ header {
   display: inline-block;
   text-decoration: none !important;
 }
-
-.btn-enter:hover {
+header .btn-enter:hover {
   transition: background-color 0.5s ease-in-out;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   text-decoration: none !important;
 }
-
-#masthead-title P {
+header #masthead-title P {
   color: white;
 }
-
-#masthead-contact p {
+header #masthead-contact p {
   color: white;
   text-decoration: none;
 }
-#masthead-contact a {
+header #masthead-contact a {
   color: white;
   text-decoration: none;
 }
-#masthead-contact .fa-envelope {
+header #masthead-contact .fa-envelope {
   color: white;
   margin-right: 10px;
 }
-#masthead-contact .fa-phone {
+header #masthead-contact .fa-phone {
   color: white;
   margin-right: 10px;
 }
 
+@media (min-width: 0px) and (max-width: 768px) {
+  #header-1 {
+    top: 40%;
+  }
+
+  #header-2 {
+    bottom: 15%;
+  }
+}
 /* ---A propos--- */
 #propos {
   background-color: #f1f1f1;
 }
-
-#img img {
+#propos #img img {
   background-image: url("/img/jardi_ca.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -211,7 +204,6 @@ header {
   user-select: none;
   box-shadow: 5px 5px 10px #c0c0c0;
 }
-
 #propos a {
   color: #698020;
   font-weight: bold;
@@ -226,16 +218,11 @@ header {
 }
 
 .card {
-  background-color: #698020;
+  background-color: #698020 !important;
   border-left: 5px solid #3a4712;
   color: whitesmoke;
   box-shadow: 5px 5px 10px #c0c0c0;
   display: block;
-}
-.card .card-line {
-  width: 50%;
-  height: 2px;
-  background-color: white;
 }
 .card .card-body {
   position: relative;
@@ -250,15 +237,12 @@ header {
   width: 150px;
   height: 150px;
 }
-
-.card-title {
+.card .card-title {
   position: relative;
 }
-
 .card ul li {
   list-style: url("/img/others/liste_style.svg") !important;
 }
-
 .card ul li::marker {
   font-size: 2rem;
 }
@@ -297,8 +281,7 @@ header {
 #rating {
   padding: 0.5rem;
 }
-
-.my-card {
+#rating .my-card {
   position: relative;
   background-color: #698020;
   border-radius: 5px;
@@ -306,12 +289,11 @@ header {
   width: auto;
   height: auto;
 }
-.my-card p {
+#rating .my-card p {
   font-size: 0.8rem;
   color: white;
 }
-
-.profile {
+#rating .profile {
   position: absolute;
   height: 60px;
   width: 60px;
@@ -321,13 +303,13 @@ header {
   border-radius: 50%;
   border: solid 5px white;
 }
-.profile-1 {
+#rating .profile-1 {
   background-image: url("https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?q=75&fm=jpg&w=400&fit=max");
 }
-.profile-2 {
+#rating .profile-2 {
   background-image: url("https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?q=75&fm=jpg&w=400&fit=max");
 }
-.profile-3 {
+#rating .profile-3 {
   background-image: url("https://images.unsplash.com/photo-1417325384643-aac51acc9e5d?q=75&fm=jpg&w=400&fit=max");
 }
 
@@ -337,20 +319,18 @@ header {
   border-radius: 50%, 50%, 0%, 0%;
   background: linear-gradient(180deg, rgba(61, 72, 26, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
 }
-
-.form-bg {
+#contact .form-bg {
   background-color: #d1d8bc;
   width: AUTO;
   border-radius: 5px;
 }
-
-form select {
+#contact form select {
   border-radius: 5px;
 }
-form input {
+#contact form input {
   border-radius: 5px;
 }
-form textarea {
+#contact form textarea {
   border-radius: 5px;
 }
 
@@ -362,8 +342,7 @@ form textarea {
 footer {
   background-color: #d1d8bc;
 }
-
-.footer-logo {
+footer .footer-logo {
   background-image: url("/img/logo/full_logo.png");
   background-position: center;
   background-size: contain;
@@ -372,21 +351,17 @@ footer {
   height: auto;
   border-radius: 15px;
 }
-
 footer a {
   text-decoration: underline;
   color: #698020;
 }
-
-.fa-location-dot {
+footer .fa-location-dot {
   color: #698020;
 }
-
-#envelope-footer {
+footer #envelope-footer {
   color: #698020;
 }
-
-#phone-footer {
+footer #phone-footer {
   color: #698020;
 }
 
@@ -402,6 +377,16 @@ footer a {
   display: block;
 }
 
+@media (min-width: 0px) and (max-width: 650px) {
+  #recruitment {
+    bottom: 0;
+    right: -51%;
+  }
+  #recruitment img {
+    width: 50%;
+    height: auto;
+  }
+}
 @keyframes btn-recruitment {
   0% {
     transform: scale(1);
