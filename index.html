@@ -595,11 +595,20 @@
     
 <!-- Map Script -->
   <script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxNmhqajNiMWF4ZjNjczBvbjByY3h5aSJ9.yZJQ-IT78zGcy3fTHdl6wg';
+  mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxY2JydjUyMDV6czNjbzAyYXJ5eXRnNiJ9.Tmfy8Rsb4m1E5lswQhsCyg';
   var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v11'
+  style: 'mapbox://styles/lucasvittaz/cl1at5uxs005c14ukon6dwkqg',
+  center: [-1.5509120011412292, 47.2964658816382],
+  zoom: 10,
   });
+
+  // Set marker options.
+  const marker = new mapboxgl.Marker({
+    color: "#b31717",
+    draggable: true
+  }).setLngLat([47.3033093730367, -1.5462427781604915])
+    .addTo(map);
   </script>
 
 </body>
