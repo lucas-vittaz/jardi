@@ -79,7 +79,8 @@
   </head>
 
   <body>
-    <div id="recruitment"><a href="https://candidat.pole-emploi.fr/offres/recherche/detail/130CRFK" target="_blank"><img src="/img/others/nousrecrutons.png" alt="Recrutement" height="auto" width="250px"></a></div>
+
+  <a href="https://candidat.pole-emploi.fr/offres/recherche/detail/130CRFK" target="_blank"><img src="/img/others/nousrecrutons.png" id="recruitment-img" alt="Recrutement"></a>
   <!-- ---Navbar--- -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -96,7 +97,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div id="navbarNav" class="collapse navbar-collapse">
+          <div id="navbarNav" class="collapse navbar-collapse m-auto">
             <ul class="nav navbar-nav m-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#accueil">| Accueil |</a>
@@ -136,10 +137,10 @@
         </div>
         <div id="header-2" class="container">
           <div class="row" id="masthead-contact">
-            <div class="col-sm-12 col-md-3 d-flex">
+            <div class="col-sm-6 col-md-3 d-flex">
               <i class="fa-solid fa-phone"></i><p>06 42 00 66 77</p>
             </div>
-            <div class="col-sm-12 col-md-4 ">
+            <div class="col-sm-6 col-md-4 ">
               <i class="fa-solid fa-envelope"></i>
               <a href="mailto:contact@jardica.net" target="_blank">contact@jardica.net</a>
             </div>
@@ -150,7 +151,7 @@
   <!-- ---A propos--- -->
 
   <section id="propos">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-lg-8 col-xl-8 col-md-6 col-sm-12">
           <h2 class="">A propos</h2>
@@ -172,7 +173,7 @@
 
   <section id="prestations">
     <div class="container">
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-sm-12 col-md-7 m-auto">
           <h2>Nos prestations</h2>
           <p class="card-text">
@@ -184,24 +185,24 @@
           </p>
         </div>
         <div class="col-sm-12 col-md-5">
-          <h5 class="card-title"><span class="bold-title">01</span> Entretien d'espaces verts</h5>
+          <h3 class="card-title"><span class="bold-title">01</span> Entretien d'espaces verts</h3>
           <div class="card">
             <div class="card-body m-auto">
               <ul>
                 <li>Tonte de pelouses (toutes surfaces)</li>
                 <li>Entretien de pelouses (scarification et regarnissage)</li>
-                <li>Taille de haies et d'arbustes</li>
-                <li>Taille d'arbres fruitiers, d'oliviers et de rosiers</li>
-                <li>Préparation de potagers</li>
+                <li>Taille de haies, arbustes, arbres fruitiers, oliviers et de rosiers</li>
+                <li>Soufflage de feuilles</li>
+                <li>Préparation de potagers, ect.</li>
               </ul>
             </div>
             <div class="prestations_img"></div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-sm-12 col-md-5">
-          <h5 class="card-title"><span class="bold-title">02</span> Élagage</h5>
+          <h3 class="card-title"><span class="bold-title">02</span> Élagage</h3>
           <div class="card">
             <div class="card-body m-auto">
               <ul>
@@ -230,6 +231,7 @@
         <div class="col-sm-12 col-md-5">
           <lottie-player
             class="my-lottie-logo text-center"
+            id="lottie-creation"
             src="https://assets9.lottiefiles.com/packages/lf20_mxlw4pl5.json"
             background="transparent"
             speed="0.5"
@@ -239,7 +241,7 @@
           ></lottie-player>
         </div>
         <div class="col-sm-12 col-md-5 m-auto mb-5">
-          <h5 class="card-title"><span class="bold-title">03</span> Création paysagère</h5>
+          <h3 class="card-title"><span class="bold-title">03</span> Création paysagère</h3>
           <div class="card">
             <div class="card-body m-auto">
               <ul>
@@ -264,7 +266,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 m-auto mb-5">
+        <div class="col-sm-8 col-md-8 m-auto">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -578,27 +580,27 @@
       }, false);
     })();
   </script>
-<script>
-window.axeptioSettings = {
+  <script>
+  window.axeptioSettings = {
   clientId: "6240919396d9bf5662489695",
   cookiesVersion: "jardica",
-};
+  };
  
-(function(d, s) {
+  (function(d, s) {
   var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
   e.async = true; e.src = "//static.axept.io/sdk.js";
   t.parentNode.insertBefore(e, t);
-})(document, "script");
-</script>
+  })(document, "script");
+  </script>
     
 <!-- Map Script -->
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxNmhqajNiMWF4ZjNjczBvbjByY3h5aSJ9.yZJQ-IT78zGcy3fTHdl6wg';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
-});
-</script>
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxNmhqajNiMWF4ZjNjczBvbjByY3h5aSJ9.yZJQ-IT78zGcy3fTHdl6wg';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11'
+  });
+  </script>
 
 </body>
 </html>

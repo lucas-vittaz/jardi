@@ -13,31 +13,31 @@ body {
 h1 {
   font-family: "Punarbhaba", serif;
   color: whitesmoke;
-  font-size: 60px;
+  font-size: 4em !important;
+  margin-bottom: 1rem !important;
 }
 
 h2 {
   font-family: "Punarbhaba", serif;
   color: #698020;
   font-weight: bold;
-  margin-bottom: 3rem !important;
+  font-size: 3em !important;
+  margin-bottom: 1rem !important;
 }
 
 h3 {
   font-family: "Punarbhaba", serif;
   color: #3a4712;
-  font-size: x-large;
+  font-size: 1.5rem !important;
   font-weight: bold;
+  margin-bottom: 1rem !important;
 }
 
 h4 {
   font-family: "Punarbhaba", serif;
   color: whitesmoke;
-}
-
-h5 {
-  font-family: "Punarbhaba", serif;
-  color: #3a4712;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 p {
@@ -49,12 +49,12 @@ li {
 }
 
 @media (min-width: 0px) and (max-width: 900px) {
-  section {
-    padding: 0.25rem;
+  * section {
+    padding: 1rem;
   }
 }
 @media (min-width: 901px) and (max-width: 5000px) {
-  section {
+  * section {
     padding: 6rem;
   }
 }
@@ -76,7 +76,7 @@ nav #navbarNav ul {
   justify-content: center;
 }
 nav #nav-logo {
-  height: 8vh;
+  height: 9vh;
   padding-left: 150px;
   background-image: url("/img/logo/partial-logo.png");
   background-size: contain;
@@ -119,6 +119,32 @@ nav #btncontact a {
     justify-content: center;
   }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  #navbarNav {
+    margin-right: 0% !important;
+  }
+  #navbarNav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  #nav-logo {
+    height: 9vh;
+    padding-left: 0px;
+    background-image: url("/img/logo/partial-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #btncontact {
+    margin-right: 0rem !important;
+  }
+  #btncontact a {
+    white-space: nowrap;
+  }
+}
 /* ---Header--- */
 header {
   position: relative;
@@ -140,6 +166,7 @@ header #header-2 {
   position: absolute;
   bottom: 15%;
   left: 5%;
+  width: 90%;
 }
 header .btn-enter {
   background: transparent;
@@ -190,9 +217,6 @@ header #masthead-contact .fa-phone {
   }
 }
 /* ---A propos--- */
-#propos {
-  background-color: #f1f1f1;
-}
 #propos #img img {
   background-image: url("/img/jardi_ca.jpg");
   background-size: contain;
@@ -229,13 +253,13 @@ header #masthead-contact .fa-phone {
 }
 .card .prestations_img {
   position: absolute;
-  bottom: -25%;
+  top: -50%;
   right: -12%;
   background-image: url("/img/others/tax_credit.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
 }
 .card .card-title {
   position: relative;
@@ -254,33 +278,50 @@ header #masthead-contact .fa-phone {
   font-size: 50px;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .prestations_img {
-    bottom: -25% !important;
-    right: 80% !important;
+    top: 90% !important;
+    right: 0% !important;
+    width: 125px !important;
+    height: 125px !important;
   }
 }
-@media (min-width: 0px) and (max-width: 650px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .prestations_img {
-    display: none;
+    top: -20% !important;
+    right: -30% !important;
+    width: 125px !important;
+    height: 125px !important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1019px) {
+  .prestations_img {
+    top: -10% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1019px) and (max-width: 1231px) {
+  .prestations_img {
+    top: -20% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1232px) and (max-width: 1400px) {
+  .prestations_img {
+    top: -50%;
+    right: -30% !important;
   }
 }
 /* ---Nos realisations--- */
 #réalisations {
   background: linear-gradient(0deg, rgba(105, 128, 32, 0.05) 2.41%, rgba(153, 164, 119, 0.0802335) 49.15%, rgba(196, 196, 196, 0) 99.95%);
 }
-#réalisations #realisations_img {
-  background-image: url("realisations_img.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: auto;
-  width: auto;
-}
 
 /* ---Nos avis--- */
-#rating {
-  padding: 0.5rem;
-}
 #rating .my-card {
   position: relative;
   background-color: #698020;
@@ -351,8 +392,11 @@ footer .footer-logo {
   height: auto;
   border-radius: 15px;
 }
-footer a {
+footer ul li a {
   text-decoration: underline;
+  color: #698020 !important;
+}
+footer i {
   color: #698020;
 }
 footer .fa-location-dot {
@@ -366,24 +410,24 @@ footer #phone-footer {
 }
 
 /* ---recruitment--- */
-#recruitment {
+#recruitment-img {
   position: fixed;
   -webkit-position: fixed;
   bottom: 0;
-  right: 2%;
+  right: 5%;
   z-index: 100000000000000;
   -webkit-animation: btn-recruitment 1s ease-in-out infinite alternate;
   animation: btn-recruitment 1s ease-in-out infinite alternate;
   display: block;
+  width: 250px;
+  height: auto;
 }
 
 @media (min-width: 0px) and (max-width: 650px) {
-  #recruitment {
+  #recruitment-img {
     bottom: 0;
-    right: -51%;
-  }
-  #recruitment img {
-    width: 50%;
+    right: 7%;
+    width: 150px;
     height: auto;
   }
 }

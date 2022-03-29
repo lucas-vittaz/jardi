@@ -5,8 +5,6 @@
   font-family: "Punarbhaba";
   src: url("/fonts/Punarbhaba_27-02-2006.ttf") format("ttf");
 }
-// font-family: "Italiana", serif;
-// font-family: 'DM Sans', sans-serif;
 
 // VARIABLES
 // Main colors
@@ -20,8 +18,6 @@ $bg-prestations: #d4dabe;
 // Partials colors
 $bg-cards: $my-secondary;
 $border-profile: white;
-// $border-profile: #495916;
-// $bg-cards: #f3f2f2;
 $shadow-cards: #c0c0c0;
 $bg-form: #d1d8bc;
 
@@ -32,28 +28,29 @@ body {
 h1 {
   font-family: "Punarbhaba", serif;
   color: whitesmoke;
-  font-size: 60px;
+  font-size: 4em !important;
+  margin-bottom: 1rem !important;
 }
 
 h2 {
   font-family: "Punarbhaba", serif;
   color: $my-secondary;
   font-weight: bold;
-  margin-bottom: 3rem !important;
+  font-size: 3em !important;
+  margin-bottom: 1rem !important;
 }
 h3 {
   font-family: "Punarbhaba", serif;
   color: #3a4712;
-  font-size: x-large;
+  font-size: 1.5rem !important;
   font-weight: bold;
+  margin-bottom: 1rem !important;
 }
 h4 {
   font-family: "Punarbhaba", serif;
   color: whitesmoke;
-}
-h5 {
-  font-family: "Punarbhaba", serif;
-  color: #3a4712;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 p {
   font-family: "DM Sans", sans-serif;
@@ -63,12 +60,12 @@ li {
 }
 
 @media (min-width: 0px) and (max-width: 900px) {
-  section {
-    padding: 0.25rem;
+  *section {
+    padding: 1rem;
   }
 }
 @media (min-width: 901px) and (max-width: 5000px) {
-  section {
+  *section {
     padding: 6rem;
   }
 }
@@ -93,7 +90,7 @@ nav {
   }
 
   #nav-logo {
-    height: 8vh;
+    height: 9vh;
     padding-left: 150px;
     background-image: url("/img/logo/partial-logo.png");
     background-size: contain;
@@ -144,6 +141,31 @@ nav {
     }
   }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  #navbarNav {
+    margin-right: 0% !important;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  }
+
+  #nav-logo {
+    height: 9vh;
+    padding-left: 0px;
+    background-image: url("/img/logo/partial-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #btncontact {
+    margin-right: 0rem !important;
+    a {
+      white-space: nowrap;
+    }
+  }
+}
 
 /* ---Header--- */
 
@@ -167,6 +189,7 @@ header {
     position: absolute;
     bottom: 15%;
     left: 5%;
+    width: 90%;
   }
   .btn-enter {
     background: transparent;
@@ -222,7 +245,6 @@ header {
 
 /* ---A propos--- */
 #propos {
-  background-color: $bg-about;
   #img img {
     background-image: url("/img/jardi_ca.jpg");
     background-size: contain;
@@ -260,13 +282,13 @@ header {
   }
   .prestations_img {
     position: absolute;
-    bottom: -25%;
+    top: -50%;
     right: -12%;
     background-image: url("/img/others/tax_credit.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
   }
   .card-title {
     position: relative;
@@ -284,16 +306,42 @@ header {
   font-weight: bolder;
   font-size: 50px;
 }
-
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .prestations_img {
-    bottom: -25% !important;
-    right: 80% !important;
+    top: 90% !important;
+    right: 0% !important;
+    width: 125px !important;
+    height: 125px !important;
   }
 }
-@media (min-width: 0px) and (max-width: 650px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .prestations_img {
-    display: none;
+    top: -20% !important;
+    right: -30% !important;
+    width: 125px !important;
+    height: 125px !important;
+  }
+}
+@media (min-width: 993px) and (max-width: 1019px) {
+  .prestations_img {
+    top: -10% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1019px) and (max-width: 1231px) {
+  .prestations_img {
+    top: -20% !important;
+    right: -30% !important;
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media (min-width: 1232px) and (max-width: 1400px) {
+  .prestations_img {
+    top: -50%;
+    right: -30% !important;
   }
 }
 /* ---Nos realisations--- */
@@ -304,20 +352,10 @@ header {
     rgba(153, 164, 119, 0.0802335) 49.15%,
     rgba(196, 196, 196, 0) 99.95%
   );
-  #realisations_img {
-    background-image: url("realisations_img.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: auto;
-    width: auto;
-  }
 }
-$carousel-control-width: 25% !important;
 
 /* ---Nos avis--- */
 #rating {
-  padding: 0.5rem;
-
   .my-card {
     position: relative;
     background-color: $bg-cards;
@@ -395,9 +433,12 @@ footer {
     height: auto;
     border-radius: 15px;
   }
-  a {
+  ul li a {
     text-decoration: underline;
-    color: $my-secondary;
+    color: $my-secondary !important;
+  }
+  i {
+    color: #698020;
   }
   .fa-location-dot {
     color: #698020;
@@ -410,24 +451,24 @@ footer {
   }
 }
 /* ---recruitment--- */
-#recruitment {
+#recruitment-img {
   position: fixed;
   -webkit-position: fixed;
   bottom: 0;
-  right: 2%;
+  right: 5%;
   z-index: 100000000000000;
   -webkit-animation: btn-recruitment 1s ease-in-out infinite alternate;
   animation: btn-recruitment 1s ease-in-out infinite alternate;
   display: block;
+  width: 250px;
+  height: auto;
 }
 @media (min-width: 0px) and (max-width: 650px) {
-  #recruitment {
+  #recruitment-img {
     bottom: 0;
-    right: -51%;
-    img {
-      width: 50%;
-      height: auto;
-    }
+    right: 7%;
+    width: 150px;
+    height: auto;
   }
 }
 @keyframes btn-recruitment {
