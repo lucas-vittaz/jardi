@@ -605,12 +605,10 @@
   center: [-1.5509120011412292, 47.2964658816382],
   zoom: 10,
   });
-
-  // Set marker options.
   const marker = new mapboxgl.Marker({
     color: "#b31717",
-    draggable: true
-  }).setLngLat([47.3033093730367, -1.5462427781604915])
+    draggable: false,
+  }).setLngLat([-1.5462427781604915, 47.3033093730367])
     .addTo(map);
   </script>
 
