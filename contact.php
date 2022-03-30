@@ -15,7 +15,7 @@ if (isset($_POST['submit'])){
          header("Location: index.php?error");
     }
     else {
-        $to = "lucasvittaz.pro@gmail.com";
+        $to = "contact@jardica.net";
         $hearders = '';
 
         $hearders .= "-Type: ".$category. "\r\n";
@@ -29,10 +29,10 @@ if (isset($_POST['submit'])){
         if(mail($to, $category, $hearders)){
             header("Location: index.php?success");
         }; 
-        
+        header("Location: index.php?success");
     };
 } else {
-    header("Location: index.php");
+    header("Location: index.php?success");
 };
 
 
