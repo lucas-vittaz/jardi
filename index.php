@@ -563,54 +563,7 @@
   <!-- Form script -->
   <script src="/app.js"></script>
   <!-- Cookies helper -->
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-  </script>
-  <script>
-  window.axeptioSettings = {
-  clientId: "6240919396d9bf5662489695",
-  cookiesVersion: "jardica",
-  };
  
-  (function(d, s) {
-  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-  e.async = true; e.src = "//static.axept.io/sdk.js";
-  t.parentNode.insertBefore(e, t);
-  })(document, "script");
-  </script>
-    
-<!-- Map Script -->
-  <script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxY2JydjUyMDV6czNjbzAyYXJ5eXRnNiJ9.Tmfy8Rsb4m1E5lswQhsCyg';
-  var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/lucasvittaz/cl1at5uxs005c14ukon6dwkqg',
-  center: [-1.5509120011412292, 47.2964658816382],
-  zoom: 10,
-  });
-  const marker = new mapboxgl.Marker({
-    color: "#b31717",
-    draggable: false,
-  }).setLngLat([-1.5462427781604915, 47.3033093730367])
-    .addTo(map);
-  </script>
 
 </body>
 </html>
