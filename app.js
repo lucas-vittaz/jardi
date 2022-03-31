@@ -38,6 +38,7 @@ window.axeptioSettings = {
   t.parentNode.insertBefore(e, t);
 })(document, "script");
 
+// MAPBOX API
 mapboxgl.accessToken =
   "pk.eyJ1IjoibHVjYXN2aXR0YXoiLCJhIjoiY2wxY2JydjUyMDV6czNjbzAyYXJ5eXRnNiJ9.Tmfy8Rsb4m1E5lswQhsCyg";
 var map = new mapboxgl.Map({
@@ -46,6 +47,7 @@ var map = new mapboxgl.Map({
   center: [-1.5509120011412292, 47.2964658816382],
   zoom: 10,
 });
+//ADD MARKER
 const marker = new mapboxgl.Marker({
   color: "#b31717",
   draggable: false,
@@ -53,6 +55,8 @@ const marker = new mapboxgl.Marker({
 })
   .setLngLat([-1.5462427781604915, 47.3033093730367])
   .addTo(map);
+
+//ADD LEGEND
 map.on("load", () => {
   map.getCanvas().style.cursor = "default";
 
@@ -78,3 +82,5 @@ map.on("load", () => {
     legend.appendChild(item);
   });
 });
+
+//1.0
