@@ -165,7 +165,7 @@
           </p>
         </div>
         <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 my-5" id="img">
-          <img src="/img/jardi_ca.jpg" alt="notre équipe Jardi CA">
+          <img src="/img/others/jardi_ca-min.jpg" alt="notre équipe Jardi CA">
         </div>
       </div>
     </div>
@@ -482,7 +482,7 @@
   <footer>
     <div class="container-fluid p-5">
       <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
-        <div class="col footer-logo mb-3 m-auto">
+        <div class="col footer-logo my-3 m-auto">
           <a href="#accueil"><img src="/img/logo/full-Logo-min.png" alt="jardica - accueil"></a>
         </div>
         <div class="col mb-3">
@@ -568,3 +568,4 @@
 
 </body>
 </html>
+<!-- 1.0 -->
