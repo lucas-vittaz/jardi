@@ -48,13 +48,21 @@ var map = new mapboxgl.Map({
   zoom: 10,
 });
 //ADD MARKER
+const nav = new mapboxgl.NavigationControl({
+  showZoom: true,
+  showCompass: true,
+});
+const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+  "Jardi'CA - 06 42 00 66 77 ."
+);
+map.addControl(nav, "bottom-right");
 const marker = new mapboxgl.Marker({
   color: "#b31717",
   draggable: false,
-  style: "Jardi'CA",
 })
   .setLngLat([-1.5462427781604915, 47.3033093730367])
-  .addTo(map);
+  .addTo(map)
+  .setPopup(popup);
 
 //ADD LEGEND
 map.on("load", () => {
