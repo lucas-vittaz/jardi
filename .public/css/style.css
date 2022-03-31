@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ---General parameters--- */
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
@@ -80,8 +79,8 @@ nav #navbarNav ul {
   justify-content: center;
 }
 nav #nav-logo {
-  height: 9vh;
-  padding-left: 150px;
+  height: 8vh;
+  padding-left: 140px;
   background-image: url("/img/logo/partial-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -344,10 +343,25 @@ header #masthead-contact .fa-phone {
   }
 }
 /* ---Nos realisations--- */
-#réalisations {
+#realisations {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(2.41%, rgba(105, 128, 32, 0.05)), color-stop(49.15%, rgba(153, 164, 119, 0.0802335)), color-stop(99.95%, rgba(196, 196, 196, 0)));
   background: -o-linear-gradient(bottom, rgba(105, 128, 32, 0.05) 2.41%, rgba(153, 164, 119, 0.0802335) 49.15%, rgba(196, 196, 196, 0) 99.95%);
   background: linear-gradient(0deg, rgba(105, 128, 32, 0.05) 2.41%, rgba(153, 164, 119, 0.0802335) 49.15%, rgba(196, 196, 196, 0) 99.95%);
+}
+
+.clippath {
+  width: 100%;
+  height: 100px;
+}
+
+.clippath-top {
+  border-radius: 0 0 50% 50%;
+  background-color: #f8f9f4;
+}
+
+.clippath-bottom {
+  border-radius: 50% 50% 0 0;
+  background-color: #f4f4f2;
 }
 
 /* ---Nos avis--- */
@@ -393,7 +407,6 @@ header #masthead-contact .fa-phone {
 /* ---Nous contacter--- */
 #contact {
   border-bottom: 1px solid transparent !important;
-  border-radius: 50%, 50%, 0%, 0%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(61, 72, 26, 0.06)), to(rgba(255, 255, 255, 0)));
   background: -o-linear-gradient(top, rgba(61, 72, 26, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(180deg, rgba(61, 72, 26, 0.06) 0%, rgba(255, 255, 255, 0) 100%);

@@ -95,8 +95,8 @@ nav {
   }
 
   #nav-logo {
-    height: 9vh;
-    padding-left: 150px;
+    height: 8vh;
+    padding-left: 140px;
     background-image: url("/img/logo/partial-logo.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -371,7 +371,7 @@ header {
   }
 }
 /* ---Nos realisations--- */
-#réalisations {
+#realisations {
   background: -webkit-gradient(
     linear,
     left bottom,
@@ -392,6 +392,18 @@ header {
     rgba(153, 164, 119, 0.0802335) 49.15%,
     rgba(196, 196, 196, 0) 99.95%
   );
+}
+.clippath {
+  width: 100%;
+  height: 100px;
+}
+.clippath-top {
+  border-radius: 0 0 50% 50%;
+  background-color: #f8f9f4;
+}
+.clippath-bottom {
+  border-radius: 50% 50% 0 0;
+  background-color: #f4f4f2;
 }
 
 /* ---Nos avis--- */
@@ -439,7 +451,6 @@ header {
 /* ---Nous contacter--- */
 #contact {
   border-bottom: 1px solid transparent !important;
-  border-radius: 50%, 50%, 0%, 0%;
   background: -webkit-gradient(
     linear,
     left top,
@@ -447,6 +458,7 @@ header {
     from(rgba(61, 72, 26, 0.06)),
     to(rgba(255, 255, 255, 0))
   );
+
   background: -o-linear-gradient(
     top,
     rgba(61, 72, 26, 0.06) 0%,
