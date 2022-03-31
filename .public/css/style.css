@@ -192,6 +192,7 @@ header .btn-enter {
   text-align: center;
   display: inline-block;
   text-decoration: none !important;
+  border-radius: 5px;
 }
 header .btn-enter:hover {
   -webkit-transition: background-color 0.5s ease-in-out;
