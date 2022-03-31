@@ -49,6 +49,32 @@ var map = new mapboxgl.Map({
 const marker = new mapboxgl.Marker({
   color: "#b31717",
   draggable: false,
+  style: "Jardi'CA",
 })
   .setLngLat([-1.5462427781604915, 47.3033093730367])
   .addTo(map);
+map.on("load", () => {
+  map.getCanvas().style.cursor = "default";
+
+  const legend = document.getElementById("legend");
+
+  const layers = [
+    "Zone d'intervention prioritaire",
+    "Zone d'intervention possible",
+  ];
+  const colors = ["hsla(75, 60%, 17%, 0.4)", "hsla(74, 60%, 31%, 0.2)"];
+
+  layers.forEach((layer, i) => {
+    const color = colors[i];
+    const item = document.createElement("div");
+    const key = document.createElement("span");
+    key.className = "legend-key";
+    key.style.backgroundColor = color;
+
+    const value = document.createElement("span");
+    value.innerHTML = `${layer}`;
+    item.appendChild(key);
+    item.appendChild(value);
+    legend.appendChild(item);
+  });
+});

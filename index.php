@@ -120,32 +120,31 @@
   <!-- ---Header--- -->
 
       <header id="accueil">
-        <div id="header-1" class="container py-2">
+        <div id="header-1" class="container-fluid m-1">
           <div class="row" id="masthead-title">
             <div class="col">
-              <h1 class="">Jardi'CA</h1>
+              <h1>Jardi'CA</h1>
               <p>
-                ENTRETIEN ET CRÉATION D’ESPACES VERTS À LA CHAPELLE-SUR-ERDRE
+                ENTRETIEN ET CRÉATION D’ESPACES VERTS À LA CHAPELLE SUR ERDRE
               </p>
+            </div>
+          </div>
+          <div class="row" id="masthead-contact">
+            <div class="col-sm-4 col-md-4 d-flex">
+              <i class="fa-solid fa-phone m-1"></i><p>06 42 00 66 77</p>
+            </div>
+            <div class="col-sm-6 col-md-6 ">
+              <i class="fa-solid fa-envelope m-1"></i>
+              <a href="mailto:contact@jardica.net" target="_blank">contact@jardica.net</a>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <a href="#propos" class="btn-enter">ENTRER</a>
+              <a href="#propos" class="btn-enter m-2">ENTRER</a>
             </div>
           </div>
         </div>
-        <div id="header-2" class="container">
-          <div class="row" id="masthead-contact">
-            <div class="col-sm-6 col-md-3 d-flex">
-              <i class="fa-solid fa-phone"></i><p>06 42 00 66 77</p>
-            </div>
-            <div class="col-sm-6 col-md-4 ">
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:contact@jardica.net" target="_blank">contact@jardica.net</a>
-            </div>
-          </div>
-        </div>
+          
       </header>
         
   <!-- ---A propos--- -->
@@ -158,7 +157,7 @@
           <p class="">
             Jardi'CA est une entreprise chapelaine, spécialisée dans la création et l'entretien d'espaces verts.<br><br>
             Notre équipe de passionnés intervient principalement auprès d'une clientèle locale, à la Chapelle sur Erdre et ses alentours. Nous privilégions également un réseau de fournisseurs et de collaborateurs de proximité.<br><br>
-            Que vous soyez une entreprise, un particulier ou une co-propriété, nous mettons tout en œuvre pour réaliser vos travaux les plus exigeants. Pour connaître le détail de nos prestations, <a href="#prestations">cliquez ici !</a><br><br>
+            Que vous soyez une entreprise, un particulier ou une copropriété, nous mettons tout en œuvre pour réaliser vos travaux les plus exigeants. Pour connaître le détail de nos prestations, <a href="#prestations">cliquez ici !</a><br><br>
             Pour toute question ou demande de devis, <a href="#contact"> cliquez ici !</a>
           </p>
         </div>
@@ -177,11 +176,11 @@
         <div class="col-sm-12 col-md-7 m-auto">
           <h2>Nos prestations</h2>
           <p class="card-text">
-            Spécialisés dans l'entretien d'espaces verts, nous pouvons réaliser tous types de travaux : entretien ponctuel, entretien annuel et remise en état de vos espaces verts.<br>
+            Spécialisés dans l'entretien d'espaces verts, nous réalisons tous types de travaux. Nous pouvons également intervenir pour de la remise en état de vos espaces verts, pour un entretien ponctuel ou encore pour un entretien plus régulier (contrat d'entretien possible).<br>
             Le petit entretien d'espace vert permet d'obtenir un crédit d'impôt de 50 %.<br><br>
             L'élagage de tout type d'arbres et de toute hauteur fait également parti de nos savoir-faire.<br><br>
-            Également passionnés de pelouses, nous réalisons très régulièrement des engazonnement de A à Z, et proposons aussi le suivi et l'entretien de vos gazons.<br><br>
-            Pour toute création de massifs et de plantations, n'hésitez pas à nous demander conseil, nous sommes a votre écoute !<br>
+            Passionnés de pelouses, nous réalisons très régulièrement des engazonnements de A à Z, et proposons aussi le suivi et l'entretien de vos gazons.<br><br>
+            Pour toute création de massifs et de plantations, n'hésitez pas à nous demander conseil, nous sommes à votre écoute !<br>
           </p>
         </div>
         <div class="col-sm-12 col-md-5">
@@ -191,9 +190,9 @@
               <ul>
                 <li>Tonte de pelouses (toutes surfaces)</li>
                 <li>Entretien de pelouses (scarification et regarnissage)</li>
-                <li>Taille de haies, arbustes, arbres fruitiers, oliviers et de rosiers</li>
+                <li>Taille de haies, d'arbres fruitiers, d'oliviers et de rosiers</li>
                 <li>Soufflage de feuilles</li>
-                <li>Préparation de potagers, ect.</li>
+                <li>Préparation de potagers, ...</li>
               </ul>
             </div>
             <div class="prestations_img"></div>
@@ -204,9 +203,9 @@
         <div class="col-sm-12 col-md-5">
           <h3 class="card-title"><span class="bold-title">02</span> Élagage</h3>
           <div class="card">
-            <div class="card-body m-auto">
+            <div class="card-body m-2">
               <ul>
-                <li>Élagage et abattage</li>
+                <li>Élagage et abattage (tout types d'arbres)</li>
                 <li>Broyage de branches</li>
                 <li>Rognage de souches</li>
                 <li>Fendage de bois</li>
@@ -215,7 +214,7 @@
           </div>
         </div>
         <div class="col"></div>
-        <div class="col-sm-12 col-md-5">
+        <div class="col-sm-12 col-md-5 m-auto">
           <lottie-player
             class="my-lottie-logo text-center"
             id="lottie-services"
@@ -248,7 +247,7 @@
               <ul>
                 <li>Engazonnement (création initiale et renouvellement de pelouses)</li>
                 <li>Création de massifs</li>
-                <li>Plantations (arbres, arbutes, vivaces, bulbes, rosiers, ect)</li>
+                <li>Plantations (arbres, arbustes, vivaces, bulbes, rosiers, ...)</li>
               </ul>
             </div>
           </div>
@@ -267,15 +266,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-8 col-md-8 m-auto">
+        <div class="col-sm-8 col-md-7 m-auto">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" data-bs-ride="false" class="active" aria-current="true" aria-label="Slide 1" ></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" data-bs-wrap="true" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -289,9 +287,6 @@
               </div>
               <div class="carousel-item">
                 <img src="/img/réalisations/274751621_691281301912019_7995885230946305209_n (1).jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/img/réalisations/87392217_114282266841787_8106647460056662016_n.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="/img/réalisations/118645619_170481194555227_5856862403641409560_n.jpg" class="d-block w-100" alt="...">
@@ -470,7 +465,10 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 mb-5">
-          <div id='map' style='width: auto; height: 370px;'></div>
+          <div class="map-position">
+            <div id='map' style='width: auto; height: 370px;'></div>
+          <div class="map-overlay" id="legend"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -481,8 +479,8 @@
   <footer>
     <div class="container-fluid p-5">
       <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
-        <div class="col footer-logo m-5">
-          <a href="#accueil"><img src="/img/logo/full_logo.png" alt="jardica - accueil"></a>
+        <div class="col footer-logo mb-3 m-auto">
+          <a href="#accueil"><img src="/img/logo/full-Logo.png" alt="jardica - accueil"></a>
         </div>
         <div class="col mb-3">
           <h3>Plan du site</h3>
