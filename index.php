@@ -112,7 +112,7 @@
                 <a class="nav-link" href="#prestations">| Nos prestations |</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#réalisations">| Nos réalisations |</a>
+                <a class="nav-link" href="#realisations">| Nos réalisations |</a>
               </li>
             </ul>
               <div id="btncontact" class="btn"><a href="#contact">Contactez-nous</a></div>
@@ -280,7 +280,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/réalisations/91349260_124230075847006_1388343076010852352_n-min.jpg" class="d-block w-100" alt="">
+                <img src="/img/réalisations/91349260_124230075847006_1388343076010852352_n-min.jpg" class="d-block w-100" alt="Création paysagère">
               </div>
               <div class="carousel-item">
                 <img src="/img/réalisations/274980269_662307198555660_1160602152317171359_n (1)-min.jpg" class="d-block w-100" alt="Taille de haies">
@@ -500,7 +500,7 @@
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="#réalisations" class="nav-link p-0 "
+              <a href="#realisations" class="nav-link p-0 "
                 >Réalisations</a
               >
             </li>

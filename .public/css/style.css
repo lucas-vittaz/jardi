@@ -354,6 +354,10 @@ header #masthead-contact .fa-phone {
   background: -o-linear-gradient(bottom, rgba(105, 128, 32, 0.05) 2.41%, rgba(153, 164, 119, 0.0802335) 49.15%, rgba(196, 196, 196, 0) 99.95%);
   background: linear-gradient(0deg, rgba(105, 128, 32, 0.05) 2.41%, rgba(153, 164, 119, 0.0802335) 49.15%, rgba(196, 196, 196, 0) 99.95%);
 }
+#realisations #carouselExampleIndicators {
+  width: auto;
+  height: auto;
+}
 
 .clippath {
   width: 100%;

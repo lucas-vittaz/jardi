@@ -53,7 +53,7 @@ const nav = new mapboxgl.NavigationControl({
   showCompass: true,
 });
 const popup = new mapboxgl.Popup({ offset: 25 }).setText(
-  "Jardi'CA - 06 42 00 66 77 ."
+  "Jardi'CA - 06 42 00 66 77"
 );
 map.addControl(nav, "bottom-right");
 const marker = new mapboxgl.Marker({
