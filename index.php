@@ -15,7 +15,7 @@
 
     <!-- Primary Meta Tags -->
     <title>Jardi'CA - Espaces verts</title>
-    <link rel="shortcut icon" href="/img/logo/onglet-min.png" />
+    <link rel="shortcut icon" href="/img/logo/onglet-min.webp" />
     <meta name="title" content="Jardi'CA - Entretien d’espaces verts" />
     <meta
       name="description"
@@ -61,29 +61,20 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    
 
       <!-- fontawesome -->
 
-    <script
-      src="https://kit.fontawesome.com/0b266df6ca.js"
-      crossorigin="anonymous"
-    ></script>
+    
 
       <!-- mapbox -->
-
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
   </head>
 
   <body>
 
-  <a href="https://candidat.pole-emploi.fr/offres/recherche/detail/130CRFK" target="_blank"><img src="/img/others/nousrecrutons-min.png" id="recruitment-img" alt="Recrutement"></a>
+  <a href="https://candidat.pole-emploi.fr/offres/recherche/detail/130CRFK" target="_blank"><img src="/img/others/nousrecrutons-min.webp" id="recruitment-img" alt="Recrutement"></a>
   <!-- ---Navbar--- -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -165,7 +156,7 @@
           </p>
         </div>
         <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 my-5" id="img">
-          <img src="/img/others/jardi_ca-min.jpg" alt="notre équipe Jardi CA">
+          <img src="/img/others/jardi_ca-min.webp" alt="notre équipe Jardi CA">
         </div>
       </div>
     </div>
@@ -280,19 +271,19 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/réalisations/91349260_124230075847006_1388343076010852352_n-min.jpg" class="d-block w-100" alt="Création paysagère">
+                <img src="/img/réalisations/ezgif.com-gif-maker (1).webp" class="d-block w-100" alt="Création paysagère">
               </div>
               <div class="carousel-item">
-                <img src="/img/réalisations/274980269_662307198555660_1160602152317171359_n (1)-min.jpg" class="d-block w-100" alt="Taille de haies">
+                <img src="/img/réalisations/ezgif.com-gif-maker (6).webp" class="d-block w-100" alt="Taille de haies">
               </div>
               <div class="carousel-item">
-                <img src="/img/réalisations/251371546_405079217762089_5303124604777460101_n-min.jpg" class="d-block w-100" alt="Engazonnement Création de pelouses">
+                <img src="/img/réalisations/ezgif.com-gif-maker (3).webp" class="d-block w-100" alt="Engazonnement Création de pelouses">
               </div>
               <div class="carousel-item">
-                <img src="/img/réalisations/274751621_691281301912019_7995885230946305209_n (1)-min.jpg" class="d-block w-100" alt="Entretien de pelouses">
+                <img src="/img/réalisations/ezgif.com-gif-maker (4).webp" class="d-block w-100" alt="Entretien de pelouses">
               </div>
               <div class="carousel-item">
-                <img src="/img/réalisations/118645619_170481194555227_5856862403641409560_n-min.jpg" class="d-block w-100" alt="Entretien de terasses">
+                <img src="/img/réalisations/ezgif.com-gif-maker (2).webp" class="d-block w-100" alt="Entretien de terasses">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -418,23 +409,23 @@
               <div class="form-row">
                 <div class="row">
                   <div class="col mb-3">
-                    <input type="name" name="name" class="form-control" id="validationCustom01" placeholder="Votre Nom"  required>
+                    <input type="name" name="name" class="form-control"  placeholder="Votre Nom"  required>
                   </div>
                   <div class="col mb-3">
-                    <input type="text" name="firstname" class="form-control" id="validationCustom02" placeholder="Votre Prénom" required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col mb-3">
-                      <input type="email" name="email" class="form-control" id="validationCustomUsername" placeholder="Votre E-mail" aria-describedby="inputGroupPrepend"  required>
-                  </div>
-                  <div class="col mb-3">
-                    <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control" id="validationCustom02" placeholder="Votre téléphone" required>
+                    <input type="text" name="firstname" class="form-control"  placeholder="Votre Prénom" required>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col mb-3">
-                    <input type="text" name='location' class="form-control" id="validationCustom03" placeholder="Lieu d'intervention" required>
+                      <input type="email" name="email" class="form-control"  placeholder="Votre E-mail" aria-describedby="inputGroupPrepend"  required>
+                  </div>
+                  <div class="col mb-3">
+                    <input type="tel" name="tel" pattern="[0-9]{10}|\+33[0-9]{9}" class="form-control"  placeholder="Votre téléphone" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <input type="text" name='location' class="form-control"  placeholder="Lieu d'intervention" required>
                   </div>               
                   <div class="col mb-3">
                     <select class="form-select" name="type" aria-label="Default select example" required>
@@ -483,7 +474,7 @@
     <div class="container-fluid p-5">
       <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
         <div class="col footer-logo my-3 m-auto">
-          <a href="#accueil"><img src="/img/logo/full-Logo-min.png" alt="jardica - accueil"></a>
+          <a href="#accueil"><img src="/img/logo/full-Logo-min.webp" alt="jardica - accueil"></a>
         </div>
         <div class="col mb-3">
           <h3>Plan du site</h3>
@@ -558,12 +549,21 @@
 
   <!-- SCRIPTS -->
 
-  <!-- Lottie files script -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+  ></script>
 
-  <!-- Form script -->
-  <script src="/app.js"></script>
-  <!-- Cookies helper -->
+  <script
+      src="https://kit.fontawesome.com/0b266df6ca.js"
+      crossorigin="anonymous" async
+    ></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async></script>
+  
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js' ></script>
+
+  <script src="/app.js" async></script>
  
 
 </body>

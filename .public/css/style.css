@@ -81,7 +81,7 @@ nav #navbarNav ul {
 nav #nav-logo {
   height: 8vh;
   padding-left: 140px;
-  background-image: url("/img/logo/partial-logo-min.png");
+  background-image: url("/img/logo/partial-logo-min.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -166,7 +166,7 @@ header {
   position: relative;
   height: 100vh;
   min-height: 500px;
-  background-image: url("/img/others/header-min.jpg");
+  background-image: url("/img/others/header-min.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ header #header-1 {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   width: auto;
-  top: 47%;
+  top: 42%;
   left: 5%;
   border-radius: 5px !important;
 }
@@ -221,16 +221,11 @@ header #masthead-contact .fa-phone {
 
 @media (min-width: 0px) and (max-width: 768px) {
   #header-1 {
-    top: 40%;
-  }
-
-  #header-2 {
-    bottom: 15%;
+    top: 37% !important;
   }
 }
 /* ---A propos--- */
 #propos #img img {
-  background-image: url("/img/others/jardi_ca-min.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -273,7 +268,7 @@ header #masthead-contact .fa-phone {
   position: absolute;
   top: -50%;
   right: -12%;
-  background-image: url("/img/others/tax_credit-min.png");
+  background-image: url("/img/others/tax_credit.webp");
   background-repeat: no-repeat;
   background-size: contain;
   width: 250px;
@@ -404,17 +399,17 @@ header #masthead-contact .fa-phone {
   border: solid 5px whitesmoke;
 }
 #rating .profile-1 {
-  background-image: url("/img/others/B.J-min.png");
+  background-image: url("/img/others/B.J-min.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }
 #rating .profile-2 {
-  background-image: url("/img/others/PM-min.png");
+  background-image: url("/img/others/PM-min.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }
 #rating .profile-3 {
-  background-image: url("/img/others/JL-min.png");
+  background-image: url("/img/others/JL-min.webp");
   background-repeat: no-repeat;
   background-size: contain;
 }
