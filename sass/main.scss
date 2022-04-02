@@ -393,9 +393,10 @@ header {
     rgba(153, 164, 119, 0.0802335) 49.15%,
     rgba(196, 196, 196, 0) 99.95%
   );
-  #carouselExampleIndicators {
-    width: auto;
-    height: auto;
+  .carousel-item img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: contain;
   }
 }
 .clippath {
