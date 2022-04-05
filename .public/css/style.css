@@ -465,6 +465,7 @@ header #masthead-contact .fa-phone {
   font-family: Arial, sans-serif;
   overflow: auto;
   border-radius: 5px;
+  border: #3a4712 1px solid;
 }
 
 #legend {
@@ -551,6 +552,34 @@ footer #phone-footer {
     transform: scale(1.05);
   }
 }
+/* ---JS TRANSITIONS--- */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.reveal-top {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-bottom {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transform: translateX(0px);
+  transition: 0.3s cubic-bezier(0.5, 0, 0, 1);
+}
+
 /* ---1.0--- */
 
 /*# sourceMappingURL=style.css.map */
