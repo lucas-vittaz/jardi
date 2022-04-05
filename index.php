@@ -128,7 +128,7 @@
         <div class="row" id="masthead-title">
           <div class="col">
             <h1>Jardi'CA</h1>
-            <p>ENTRETIEN ET CRÉATION D’ESPACES VERTS À LA CHAPELLE SUR ERDRE</p>
+            <div><p>ENTRETIEN ET CRÉATION D’ESPACES VERTS À LA CHAPELLE SUR ERDRE</p></div>
           </div>
         </div>
         <div class="row" id="masthead-contact">

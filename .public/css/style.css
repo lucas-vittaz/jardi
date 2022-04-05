@@ -84,6 +84,7 @@ nav #nav-logo {
   background-image: url("/img/logo/partial-logo-min.webp");
   background-size: contain;
   background-repeat: no-repeat;
+  user-select: none;
 }
 nav .nav-link {
   color: #698020 !important;
@@ -170,6 +171,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  user-select: none;
 }
 header #header-1 {
   position: absolute;
@@ -226,6 +228,7 @@ header #masthead-contact .fa-phone {
 }
 /* ---A propos--- */
 #propos #img img {
+  user-select: none;
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -273,12 +276,14 @@ header #masthead-contact .fa-phone {
   background-size: contain;
   width: 250px;
   height: 250px;
+  user-select: none;
 }
 .card .card-title {
   position: relative;
 }
 .card ul li {
   list-style: url("/img/others/liste_style.svg") !important;
+  user-select: none;
 }
 .card ul li::marker {
   font-size: 2rem;
@@ -403,16 +408,19 @@ header #masthead-contact .fa-phone {
   background-image: url("/img/others/B.J-min.webp");
   background-repeat: no-repeat;
   background-size: contain;
+  user-select: none;
 }
 #rating .profile-2 {
   background-image: url("/img/others/PM-min.webp");
   background-repeat: no-repeat;
   background-size: contain;
+  user-select: none;
 }
 #rating .profile-3 {
   background-image: url("/img/others/JL-min.webp");
   background-repeat: no-repeat;
   background-size: contain;
+  user-select: none;
 }
 
 /* ---Nous contacter--- */
@@ -489,6 +497,7 @@ footer {
 footer .footer-logo img {
   border-radius: 5px !important;
   width: 100%;
+  user-select: none;
 }
 footer ul li a {
   text-decoration: underline;
@@ -522,6 +531,7 @@ footer #phone-footer {
   display: block;
   width: 250px;
   height: auto;
+  user-select: none;
 }
 
 @media (min-width: 0px) and (max-width: 650px) {
@@ -555,22 +565,22 @@ footer #phone-footer {
 /* ---JS TRANSITIONS--- */
 .reveal-left {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-50px);
 }
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(50px);
 }
 
 .reveal-top {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(50px);
 }
 
 .reveal-bottom {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-50px);
 }
 
 .reveal-visible {
@@ -580,6 +590,6 @@ footer #phone-footer {
   transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
-/* ---1.5--- */
+/* ---1.5 jardica--- */
 
 /*# sourceMappingURL=style.css.map */

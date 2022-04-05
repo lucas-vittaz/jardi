@@ -100,6 +100,7 @@ nav {
     background-image: url("/img/logo/partial-logo-min.webp");
     background-size: contain;
     background-repeat: no-repeat;
+    user-select: none;
   }
 
   .nav-link {
@@ -195,6 +196,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  user-select: none;
 
   #header-1 {
     position: absolute;
@@ -257,6 +259,7 @@ header {
 /* ---A propos--- */
 #propos {
   #img img {
+    user-select: none;
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -305,12 +308,14 @@ header {
     background-size: contain;
     width: 250px;
     height: 250px;
+    user-select: none;
   }
   .card-title {
     position: relative;
   }
   ul li {
     list-style: url("/img/others/liste_style.svg") !important;
+    user-select: none;
   }
   ul li::marker {
     font-size: 2rem;
@@ -445,16 +450,19 @@ header {
       background-image: url("/img/others/B.J-min.webp");
       background-repeat: no-repeat;
       background-size: contain;
+      user-select: none;
     }
     &-2 {
       background-image: url("/img/others/PM-min.webp");
       background-repeat: no-repeat;
       background-size: contain;
+      user-select: none;
     }
     &-3 {
       background-image: url("/img/others/JL-min.webp");
       background-repeat: no-repeat;
       background-size: contain;
+      user-select: none;
     }
   }
 }
@@ -545,6 +553,7 @@ footer {
   .footer-logo img {
     border-radius: 5px !important;
     width: 100%;
+    user-select: none;
   }
   ul li a {
     text-decoration: underline;
@@ -578,6 +587,7 @@ footer {
   display: block;
   width: 250px;
   height: auto;
+  user-select: none;
 }
 @media (min-width: 0px) and (max-width: 650px) {
   #recruitment-img {
@@ -610,19 +620,19 @@ footer {
 /* ---JS TRANSITIONS--- */
 .reveal-left {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(-50px);
 }
 .reveal-right {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(50px);
 }
 .reveal-top {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(50px);
 }
 .reveal-bottom {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(-50px);
 }
 .reveal-visible {
   opacity: 1;
@@ -630,4 +640,4 @@ footer {
   transform: translateX(0px);
   transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
-/* ---1.5--- */
+/* ---1.5 jardica--- */
