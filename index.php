@@ -7,11 +7,20 @@
 
     <!-- Google -->
 
-    <meta name="google-site-verification" content="..." />
     <meta name="robots" content="translate" />
     <meta name="googlebot" content="translate" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3KDDGV95S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D3KDDGV95S');
+    </script>
 
     <!-- Primary Meta Tags -->
 
