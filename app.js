@@ -103,8 +103,8 @@ var options = {
 const handleIntersect = function (entries, observer) {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio > ratio) {
-      entry.taget.classList.add("reveal-visible");
-      observer.unobserve(entry.target);
+      entry.target.classList.add("reveal-visible");
+      // observer.unobserve(entry.target);
     }
   });
 };
