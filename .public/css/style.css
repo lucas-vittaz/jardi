@@ -560,12 +560,12 @@ footer #phone-footer {
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(30px);
 }
 
 .reveal-top {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateY(30px);
 }
 
 .reveal-bottom {
