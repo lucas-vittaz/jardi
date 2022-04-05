@@ -35,6 +35,6 @@ if (isset($_POST['submit'])){
     header("Location: index.php?success");
 };
 
-//1.5
+//1.5 jardica
 
 ?>

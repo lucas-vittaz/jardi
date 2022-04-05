@@ -14,26 +14,31 @@
     <meta name="googlebot" content="index, follow" />
 
     <!-- Primary Meta Tags -->
+
     <title>Jardi'CA - Espaces verts</title>
     <link rel="shortcut icon" href="/img/logo/onglet-min.webp" />
     <meta name="title" content="Jardi'CA - Entretien d’espaces verts" />
     <meta
       name="description"
-      content="Jeune entreprise chapelaine spécialisée dans l’entretien d’espaces verts et la création de pelouses.
-    Particulièrement attaché à la satisfaction client, nous mettons tout en œuvre pour réaliser vos travaux les plus exigeants. "
+      content="Entreprise chapelaine spécialisée dans l’entretien d’espaces verts et la création de pelouses.
+      Nous intervenons à la Chapelle sur Erdre et ses alentours auprès des entreprise, particuliers et des copropriétés."
     />
+    <meta name="keywords" content="jardica, jardi'ca, la chapelle sur erdre, la chapelle-sur-erdre, entretien espaces verts, paysagisme, pelouses, nantes">
+    
     <!-- Open Graph / Facebook -->
+
     <meta property="og:type" content="Jardi'CA - Entretien d’espaces verts" />
     <meta property="og:url" content="https://jardica.net/" />
     <meta property="og:title" content="Jardi'CA - Entretien d’espaces verts" />
     <meta
       property="og:description"
-      content="Jeune entreprise chapelaine spécialisée dans l’entretien d’espaces verts et la création de pelouses.
+      content="Entreprise chapelaine spécialisée dans l’entretien d’espaces verts et la création de pelouses.
       Particulièrement attaché à la satisfaction client, nous mettons tout en œuvre pour réaliser vos travaux les plus exigeants."
     />
-    <meta property="og:image" content="onglet.png" />
+    <meta property="og:image" content="/img/logo/onglet-min.webp" />
 
     <!-- Twitter -->
+
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://jardica.net/" />
     <meta
@@ -42,12 +47,10 @@
     />
     <meta
       property="twitter:description"
-      content="Jeune entreprise chapelaine spécialisée dans l’entretien d’espaces verts et la création de pelouses.
+      content="Entreprise chapelaine spécialisée dans l’entretien d’espaces verts et la création de pelouses.
       Particulièrement attaché à la satisfaction client, nous mettons tout en œuvre pour réaliser vos travaux les plus exigeants."
     />
-    <meta property="twitter:image" content="onglet.png" />
-
-    <!-- style and CDN -->
+    <meta property="twitter:image" content="/img/logo/onglet-min.webp" />
 
     <!-- CSS -->
 
@@ -777,4 +780,4 @@
     <script src="/app.js" async></script>
   </body>
 </html>
-<!-- 1.5 -->
+<!-- 1.5 jardica -->
