@@ -71,7 +71,7 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href=".public/css/style.css" />
+    <link rel="stylesheet" href="style-min.css" />
   </head>
 
   <body>
@@ -82,6 +82,7 @@
         src="/img/others/nousrecrutons-min.webp"
         id="recruitment-img"
         alt="Recrutement"
+        loading="lazy"
     /></a>
     <!-- ---Navbar--- -->
 
@@ -188,6 +189,7 @@
             <img
               src="/img/others/jardi_ca-min.webp"
               alt="Charlie Arnoult - notre équipe Jardi CA"
+              loading="lazy"
             />
           </div>
         </div>
@@ -373,6 +375,7 @@
                     width="100%"
                     height="600px"
                     alt="Création paysagère"
+                    loading="lazy"
                   />
                 </div>
                 <div class="carousel-item">
@@ -382,6 +385,7 @@
                     width="100%"
                     height="600px"
                     alt="Taille de haies"
+                    loading="lazy"
                   />
                 </div>
                 <div class="carousel-item">
@@ -391,6 +395,7 @@
                     width="100%"
                     height="600px"
                     alt="Engazonnement Création de pelouses"
+                    loading="lazy"
                   />
                 </div>
                 <div class="carousel-item">
@@ -400,6 +405,7 @@
                     width="100%"
                     height="600px"
                     alt="Entretien de pelouses"
+                    loading="lazy"
                   />
                 </div>
                 <div class="carousel-item">
@@ -409,6 +415,7 @@
                     width="100%"
                     height="600px"
                     alt="Entretien de terasses"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -560,7 +567,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 mb-5">
             <div class="form-bg p-2">
-              <form action="contact.php" method="POST" class="form">
+              <form action="contact-min.php" method="POST" class="form">
                 <div class="form-row">
                   <div class="row">
                     <div class="col mb-3">
@@ -680,7 +687,7 @@
         <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
           <div class="col footer-logo my-3 m-auto">
             <a href="#accueil"
-              ><img src="/img/logo/full-Logo-min.webp" alt="jardica - accueil"
+              ><img src="/img/logo/full-Logo-min.webp" alt="jardica - accueil" loading="lazy"
             /></a>
           </div>
           <div class="col mb-3">
@@ -807,7 +814,7 @@
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
 
-    <script src="/app.js" async></script>
+    <script src="/app-min.js" async></script>
   </body>
 </html>
 <!-- 1.5 jardica -->
