@@ -393,10 +393,10 @@ header {
     rgba(153, 164, 119, 0.0802335) 49.15%,
     rgba(196, 196, 196, 0) 99.95%
   );
+}
+@media (min-width: 0px) and (max-width: 1000px) {
   .carousel-item img {
-    width: 100%;
-    min-height: 100%;
-    object-fit: contain;
+    height: auto;
   }
 }
 .clippath {
@@ -605,5 +605,27 @@ footer {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
+}
+/* ---JS TRANSITIONS--- */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.reveal-right {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.reveal-top {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.reveal-bottom {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.3s cubic-bezier(0.5, 0, 0, 1);
 }
 /* ---1.0--- */
