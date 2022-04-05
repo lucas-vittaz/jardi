@@ -35,6 +35,6 @@ if (isset($_POST['submit'])){
     header("Location: index.php?success");
 };
 
-//1.0
+//1.5
 
 ?>

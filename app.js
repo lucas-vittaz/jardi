@@ -122,4 +122,4 @@ document.querySelectorAll(".reveal-top").forEach(function (visible) {
 document.querySelectorAll(".reveal-bottom").forEach(function (visible) {
   observer.observe(visible);
 });
-//1.00
+//1.5
