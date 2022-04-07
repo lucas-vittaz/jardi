@@ -80,7 +80,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 10;
-  // box-shadow: 0 4px 40px $my-primary;
+  box-shadow: 0 3px 40px $my-primary;
   overflow: none;
 
   #navbarNav {
@@ -300,50 +300,49 @@ header {
   a:hover{
     color: $my-primary;
   }
-}
-.card {
-  background-color: $my-secondary !important;
-  color: whitesmoke;
-  -webkit-box-shadow: 5px 5px 10px #c0c0c0;
-  display: block;
-  box-shadow: 0 14px 26px $shadow-cards;
-  transition: all 0.3s ease-out;
-
-  .card-body {
-    position: relative;
+  .card {
+    background-color: $my-secondary !important;
+    color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    display: block;
+    box-shadow: 0 14px 26px $shadow-cards;
+    transition: all 0.3s ease-out;
+    .card:hover {
+      transform: translateY(-5px) scale(1.005) translateZ(0);
+      border-left: 10px solid $my-primary!important;
+      box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards;
+    }
+    .bold-title {
+      color: whitesmoke;
+      font-family: Italiana;
+      font-weight: bolder;
+      font-size: 50px;
+    }
+    .card-body {
+      position: relative;
+    }
+    .prestations_img {
+      position: absolute;
+      top: -50%;
+      right: -12%;
+      background-image: url("/img/others/tax_credit.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 250px;
+      height: 250px;
+      user-select: none;
+    }
+    .card-title {
+      position: relative;
+    }
+    ul li {
+      list-style: url("/img/others/liste_style.svg") !important;
+      user-select: none;
+    }
+    ul li::marker {
+      font-size: 2rem;
+    }
   }
-  .prestations_img {
-    position: absolute;
-    top: -50%;
-    right: -12%;
-    background-image: url("/img/others/tax_credit.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 250px;
-    height: 250px;
-    user-select: none;
-  }
-  .card-title {
-    position: relative;
-  }
-  ul li {
-    list-style: url("/img/others/liste_style.svg") !important;
-    user-select: none;
-  }
-  ul li::marker {
-    font-size: 2rem;
-  }
-}
-.card:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  border-left: 10px solid $my-primary!important;
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards;
-}
-.bold-title {
-  color: whitesmoke;
-  font-family: Italiana;
-  font-weight: bolder;
-  font-size: 50px;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   .prestations_img {
@@ -527,39 +526,38 @@ header {
     color: whitesmoke;
     text-decoration: none;
   }
+  .map-position {
+    position: relative;
+  }
+  #map {
+    -webkit-box-shadow: 5px 5px 10px #c0c0c0;
+    box-shadow: 5px 5px 10px #c0c0c0;
+    border-radius: 5px;
+  }
+  .map-overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #fff;
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    border-radius: 5px;
+    border: #3a4712 1px solid;
+  }
+  #legend {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 240px;
+  }
+  .legend-key {
+    display: inline-block;
+    border-radius: 20%;
+    width: 15px;
+    height: 10px;
+    margin-right: 5px;
+  }
 }
-.map-position {
-  position: relative;
-}
-#map {
-  -webkit-box-shadow: 5px 5px 10px #c0c0c0;
-  box-shadow: 5px 5px 10px #c0c0c0;
-  border-radius: 5px;
-}
-.map-overlay {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  background: #fff;
-  margin-right: 20px;
-  font-family: Arial, sans-serif;
-  overflow: auto;
-  border-radius: 5px;
-  border: #3a4712 1px solid;
-}
-#legend {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  height: 50px;
-  width: 240px;
-}
-.legend-key {
-  display: inline-block;
-  border-radius: 20%;
-  width: 15px;
-  height: 10px;
-  margin-right: 5px;
-}
-
 /* ---footer--- */
 footer {
   background-color: #d1d8bc;
