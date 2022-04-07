@@ -71,7 +71,7 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="style-min.css" />
+    <link rel="stylesheet" href=".public/css/style.css" />
   </head>
 
   <body>
@@ -127,7 +127,7 @@
     <header id="accueil">
       <div id="header-1" class="container-fluid m-1 reveal-bottom">
         <div class="row" id="masthead-title">
-          <div class="col">
+          <div class="col reveal-bottom">
             <h1>Jardi'CA</h1>
             <div>
               <p>
@@ -138,11 +138,11 @@
           </div>
         </div>
         <div class="row" id="masthead-contact">
-          <div class="col-sm-4 col-md-4 d-flex">
+          <div class="col-sm-4 col-md-4 d-flex reveal-left">
             <i class="fa-solid fa-phone m-1"></i>
             <p>06 42 00 66 77</p>
           </div>
-          <div class="col-sm-6 col-md-6">
+          <div class="col-sm-6 col-md-6 reveal-right">
             <i class="fa-solid fa-envelope m-1"></i>
             <a href="mailto:contact@jardica.net" target="_blank"
               >contact@jardica.net</a
@@ -150,7 +150,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col reveal-left">
             <a href="#propos" class="btn-enter m-2">ENTRER</a>
           </div>
         </div>
@@ -174,7 +174,7 @@
               alentours. Nous privilégions également un réseau de fournisseurs
               et de collaborateurs de proximité.<br /><br />
               Que vous soyez une entreprise, un particulier ou une copropriété,
-              nous mettons tout en œuvre pour réaliser vos
+              nous mettrons tout en œuvre pour réaliser vos
               <strong>travaux</strong> les plus exigeants. Pour connaître le
               détail de nos prestations, <a href="#prestations">cliquez ici !</a
               ><br /><br />
@@ -204,14 +204,24 @@
           <div class="col-sm-12 col-md-7 m-auto">
             <h2>Nos prestations</h2>
             <p class="card-text">
-              Spécialisés dans l'entretien d'<strong>espaces verts</strong>,
-              nous réalisons tous types de <strong>travaux</strong>. Nous
-              pouvons également intervenir pour de la remise en état de vos
-              <strong>espaces verts</strong>, pour un
-              <strong>entretien</strong> ponctuel ou encore pour un entretien
-              plus régulier (contrat d'entretien possible).<br />
-              Le petit entretien d'espace vert permet d'obtenir un
-              <strong>crédit d'impôt</strong> de 50 %.<br /><br />
+              Spécialisés dans <strong>l’entretien d’espaces verts</strong>,
+              nous avons à cœur de travailler dans les
+              <strong>jardins</strong>.<br /><br />
+              Vous souhaitez remettre en état un jardin laissé à l’abandon ? ou
+              simplement effectuer un entretien ponctuel, voire régulier ? Nous
+              sommes là pour répondre à vos attentes !<br />
+              Nous proposons des formules sur mesure et des contrats annuels
+              pour que le jardin ne soit plus une préoccupation !<br /><br />
+              Bon à savoir : en nous faisant intervenir pour du petit entretien
+              de jardin, vous bénéficiez d’un
+              <strong>crédit d’impôt de 50%</strong>
+              <a
+                href="https://www.servicesalapersonne.gouv.fr/beneficier-des-sap/quelles-sont-activites-de-services-la-personne/petits-travaux-de-jardinage"
+                target="_blank"
+              >
+                (en savoir plus)</a
+              >
+              !<br /><br />
               L'<strong>élagage</strong> de tout type d'arbres et de toute
               hauteur fait également parti de nos savoir-faire.<br /><br />
               Passionnés de <strong>pelouses</strong>, nous réalisons très
@@ -224,7 +234,7 @@
               !<br />
             </p>
           </div>
-          <div class="col-sm-12 col-md-5">
+          <div class="col-sm-12 col-md-5 my-auto">
             <h3 class="card-title">
               <span class="bold-title">01</span>
               <strong>Entretien d'espaces verts</strong>
@@ -687,7 +697,10 @@
         <div class="row flex-column flex-nowrap flex-sm-row flex-sm-wrap">
           <div class="col footer-logo my-3 m-auto">
             <a href="#accueil"
-              ><img src="/img/logo/full-Logo-min.webp" alt="jardica - accueil" loading="lazy"
+              ><img
+                src="/img/logo/full-Logo-min.webp"
+                alt="jardica - accueil"
+                loading="lazy"
             /></a>
           </div>
           <div class="col mb-3">
