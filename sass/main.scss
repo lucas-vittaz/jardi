@@ -27,7 +27,7 @@ body {
 h1 {
   font-family: "Punarbhaba", serif;
   color: whitesmoke;
-  font-size: 5em !important;
+  font-size: 4em !important;
   margin-bottom: 0.5rem !important;
 }
 
@@ -58,11 +58,11 @@ li {
   font-family: "DM Sans", sans-serif;
 }
 
-// @media (min-width: 0px) and (max-width: 900px) {
-//   *section {
-//     padding: 1rem;
-//   }
-// }
+@media (min-width: 0px) and (max-width: 900px) {
+  *section {
+    padding: 1rem;
+  }
+}
 @media (min-width: 901px) and (max-width: 5000px) {
   *section {
     padding: 6rem;
@@ -300,6 +300,12 @@ header {
   a:hover{
     color: $my-primary;
   }
+  .bold-title {
+    color: whitesmoke;
+    font-family: Italiana;
+    font-weight: bolder;
+    font-size: 50px;
+  }
   .card {
     background-color: $my-secondary !important;
     color: whitesmoke;
@@ -307,17 +313,7 @@ header {
     display: block;
     box-shadow: 0 14px 26px $shadow-cards;
     transition: all 0.3s ease-out;
-    .card:hover {
-      transform: translateY(-5px) scale(1.005) translateZ(0);
-      border-left: 10px solid $my-primary!important;
-      box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards;
-    }
-    .bold-title {
-      color: whitesmoke;
-      font-family: Italiana;
-      font-weight: bolder;
-      font-size: 50px;
-    }
+    
     .card-body {
       position: relative;
     }
@@ -342,6 +338,11 @@ header {
     ul li::marker {
       font-size: 2rem;
     }
+  }
+  .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    border-left: 10px solid $my-primary!important;
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px $shadow-cards;
   }
 }
 @media (min-width: 0px) and (max-width: 767px) {

@@ -11,7 +11,7 @@ body {
 h1 {
   font-family: "Punarbhaba", serif;
   color: whitesmoke;
-  font-size: 5em !important;
+  font-size: 4em !important;
   margin-bottom: 0.5rem !important;
 }
 
@@ -46,6 +46,11 @@ li {
   font-family: "DM Sans", sans-serif;
 }
 
+@media (min-width: 0px) and (max-width: 900px) {
+  * section {
+    padding: 1rem;
+  }
+}
 @media (min-width: 901px) and (max-width: 5000px) {
   * section {
     padding: 6rem;
@@ -264,6 +269,12 @@ header #masthead-contact .fa-phone {
 #prestations a:hover {
   color: #3a4712;
 }
+#prestations .bold-title {
+  color: whitesmoke;
+  font-family: Italiana;
+  font-weight: bolder;
+  font-size: 50px;
+}
 #prestations .card {
   background-color: #698020 !important;
   color: whitesmoke;
@@ -271,17 +282,6 @@ header #masthead-contact .fa-phone {
   display: block;
   box-shadow: 0 14px 26px #c0c0c0;
   transition: all 0.3s ease-out;
-}
-#prestations .card .card:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  border-left: 10px solid #3a4712 !important;
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #c0c0c0;
-}
-#prestations .card .bold-title {
-  color: whitesmoke;
-  font-family: Italiana;
-  font-weight: bolder;
-  font-size: 50px;
 }
 #prestations .card .card-body {
   position: relative;
@@ -306,6 +306,11 @@ header #masthead-contact .fa-phone {
 }
 #prestations .card ul li::marker {
   font-size: 2rem;
+}
+#prestations .card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  border-left: 10px solid #3a4712 !important;
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px #c0c0c0;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
