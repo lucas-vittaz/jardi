@@ -71,7 +71,7 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href=".public/css/style.css" />
+    <link rel="stylesheet" href="style-min.css" />
   </head>
 
   <body>
