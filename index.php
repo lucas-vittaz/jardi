@@ -575,7 +575,7 @@
           <div class="shape_section mb-5"></div>
         </div>
         <div class="row">
-          <div class="col-sm-12 col-md-6 mb-5">
+          <div class="col-sm-12 col-md-6 mb-5 reveal-left">
             <div class="form-bg p-2">
               <form action="contact-min.php" method="POST" class="form">
                 <div class="form-row">
@@ -680,7 +680,7 @@
               </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 mb-5">
+          <div class="col-sm-12 col-md-6 mb-5 reveal-right">
             <div class="map-position">
               <div id="map" style="width: auto; height: 370px"></div>
               <div class="map-overlay" id="legend"></div>

@@ -226,7 +226,7 @@ header {
     -webkit-transition: background-color 0.5s ease-in-out;
     -o-transition: background-color 0.5s ease-in-out;
     transition: background-color 0.5s ease-in-out;
-    background: rgba(0, 0, 0, 0.6);
+    background: $my-primary;
     color: whitesmoke;
     text-decoration: none !important;
   }
@@ -521,7 +521,7 @@ header {
     }
   }
   #btn-submit {
-    background-color: $my-secondary !important;
+    background-color: $my-secondary;
     font-weight: bold;
     border: none;
     color: whitesmoke;
@@ -558,6 +558,12 @@ header {
     height: 10px;
     margin-right: 5px;
   }
+}
+#btn-submit:hover {
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  background: $my-primary !important;
 }
 /* ---footer--- */
 footer {

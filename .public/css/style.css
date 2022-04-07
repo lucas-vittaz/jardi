@@ -203,7 +203,7 @@ header .btn-enter:hover {
   -webkit-transition: background-color 0.5s ease-in-out;
   -o-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
-  background: rgba(0, 0, 0, 0.6);
+  background: #3a4712;
   color: whitesmoke;
   text-decoration: none !important;
 }
@@ -459,7 +459,7 @@ header #masthead-contact .fa-phone {
   border-radius: 5px;
 }
 #contact #btn-submit {
-  background-color: #698020 !important;
+  background-color: #698020;
   font-weight: bold;
   border: none;
   color: whitesmoke;
@@ -495,6 +495,13 @@ header #masthead-contact .fa-phone {
   width: 15px;
   height: 10px;
   margin-right: 5px;
+}
+
+#btn-submit:hover {
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  background: #3a4712 !important;
 }
 
 /* ---footer--- */
