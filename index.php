@@ -253,7 +253,7 @@
                   </li>
                   <li>Soufflage de feuilles</li>
                   <li><strong>Nettoyage de terasses</li>
-                  <li>Préparation de potagers, ...</li>
+                  <li>Préparation de potagers...</li>
                 </ul>
               </div>
               <div class="prestations_img"></div>
