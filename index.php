@@ -388,6 +388,10 @@
                     alt="Création paysagère"
                     loading="lazy"
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <img
@@ -398,6 +402,10 @@
                     alt="Taille de haies"
                     loading="lazy"
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <img
@@ -408,6 +416,10 @@
                     alt="Engazonnement Création de pelouses"
                     loading="lazy"
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <img
@@ -418,6 +430,10 @@
                     alt="Entretien de pelouses"
                     loading="lazy"
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <img
@@ -428,6 +444,10 @@
                     alt="Entretien de terasses"
                     loading="lazy"
                   />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
                 </div>
               </div>
               <button
