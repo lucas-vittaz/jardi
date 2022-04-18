@@ -34,6 +34,7 @@ map.on("load", () => {
     "Zone d'intervention prioritaire",
     "Zone d'intervention possible",
   ];
+
   const colors = ["hsla(75, 60%, 17%, 0.4)", "hsla(74, 60%, 31%, 0.2)"];
 
   layers.forEach((layer, i) => {

@@ -100,8 +100,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="navbarNav" class="collapse navbar-collapse m-auto">
-          <ul class="nav navbar-nav m-auto">
+        <div id="navbarNav" class="collapse navbar-collapse text-center">
+          <ul class="nav navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#accueil">| Accueil |</a>
             </li>
@@ -178,7 +178,7 @@
               <strong>travaux</strong> les plus exigeants. Pour connaître le
               détail de nos prestations, <a href="#prestations">cliquez ici !</a
               ><br /><br />
-              Pour toute question ou demande de devis,
+              Pour toutes questions ou demandes de devis,
               <a href="#contact"> cliquez ici !</a>
             </p>
           </div>
@@ -222,15 +222,15 @@
                 (en savoir plus)</a
               >
               !<br /><br />
-              L'<strong>élagage</strong> de tout type d'arbres et de toute
-              hauteur fait également parti de nos savoir-faire.<br /><br />
+              L'<strong>élagage</strong> de tous types d'arbres et de toutes
+              hauteurs fait également parti de nos savoir-faire.<br /><br />
               Passionnés de <strong>pelouses</strong>, nous réalisons très
               régulièrement des <strong>engazonnements</strong> de A à Z, et
               proposons aussi le suivi et l'<strong
                 >entretien de vos gazons</strong
               >.<br /><br />
-              Pour toute <strong>création de massifs</strong> et de plantations,
-              n'hésitez pas à nous demander conseil, nous sommes à votre écoute
+              Pour toutes <strong>créations de massifs</strong> et de plantations,
+              n'hésitez pas à nous demander conseils, nous sommes à votre écoute
               !<br />
             </p>
           </div>
@@ -252,6 +252,7 @@
                     d'oliviers et de rosiers
                   </li>
                   <li>Soufflage de feuilles</li>
+                  <li><strong>Nettoyage de terasses</li>
                   <li>Préparation de potagers, ...</li>
                 </ul>
               </div>
@@ -268,7 +269,7 @@
               <div class="card-body m-2">
                 <ul>
                   <li>
-                    <strong>Élagage</strong> et abattage (tout types d'arbres)
+                    <strong>Élagage</strong> et abattage (tous types d'arbres)
                   </li>
                   <li>Broyage de branches</li>
                   <li><strong>Rognage de souches</strong></li>
