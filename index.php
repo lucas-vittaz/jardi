@@ -213,7 +213,7 @@
               Nous proposons des formules sur mesure et des contrats annuels
               pour que le jardin ne soit plus une préoccupation !<br /><br />
               Bon à savoir : en nous faisant intervenir pour du petit entretien
-              de jardin, vous bénéficiez d’un
+              de votre jardin, vous bénéficiez d’un
               <strong>crédit d’impôt de 50%</strong>
               <a
                 href="https://www.servicesalapersonne.gouv.fr/beneficier-des-sap/quelles-sont-activites-de-services-la-personne/petits-travaux-de-jardinage"
@@ -389,8 +389,8 @@
                     loading="lazy"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Création paysagère</h5>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -403,8 +403,8 @@
                     loading="lazy"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Entretien d’espaces verts</h5>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -417,8 +417,8 @@
                     loading="lazy"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Engazonnement Création de pelouses</h5>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -431,8 +431,8 @@
                     loading="lazy"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Entretien de pelouses</h5>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -445,8 +445,8 @@
                     loading="lazy"
                   />
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Entretien de terasses</h5>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
                   </div>
                 </div>
               </div>
