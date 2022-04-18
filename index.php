@@ -395,7 +395,7 @@
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="/img/réalisations/ezgif.com-gif-maker (6).webp"
+                    src="/img/réalisations/274975546_1152217298863821_9202920739869984483_n-_2_.webp"
                     class="d-block w-100"
                     width="100%"
                     height="600px"
